@@ -218,7 +218,7 @@ const Home = () => {
 
 
     return (
-        <div className='relative bg-red-800 px-1'>
+        <div className='relative bg-[rgb(29,70,30)] px-1'>
             {toasterShow ? <div className='w-[90%] absolute z-50 top-[500px] left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
                 <div className='flex gap-2 bg-black opacity-80 text-white px-2 py-1 rounded-md'>
                     <div>{toasterText}</div>
@@ -272,7 +272,7 @@ const Home = () => {
                             <h1 className='text-gray-600 mb-3 mt-2 text-[14px] mr-5 font-semibold'>Are you sure you want to buy this plan?</h1>
 
                             <div className='flex justify-end pt-4 text-[14px]'>
-                                <button onClick={() => closeModal('ok')} className='bg-red-800 text-white px-2 py-1   w-[64px]'>Yes</button>
+                                <button onClick={() => closeModal('ok')} className='bg-[rgb(29,70,30)] text-white px-2 py-1   w-[64px]'>Yes</button>
                                 <button onClick={() => closeModal('cancel')} className='border border-gray-300  px-2 py-1   w-[64px] ml-2'>No</button>
                             </div>
                         </div>
@@ -288,7 +288,7 @@ const Home = () => {
                     ariaHideApp={false}>
                     <div className='w-full rounded-lg shadow-xl z-10 border border-gray-200'>
                         <div className='flex  flex-col bg-white w-full text-white rounded-md'>
-                            <div className='text-white text-xl text-center bg-red-800 py-2'>Welcome to Boat</div>
+                            <div className='text-white text-xl text-center bg-[rgb(29,70,30)] py-2'>Welcome to Boat</div>
                             <div className='flex flex-col p-2 text-lg gap-2 font-normal bg-white text-red-800 text-semibold pt-4 mb-[180px]'>
                                 Sign Up to get 50rs <br />
                                 Commission bonus up to 30% <br />
@@ -317,7 +317,7 @@ const Home = () => {
             </div>
 
             {/*Marquee Implementation*/}
-            {/* <div className="bg-red-800 rounded-md items-center px-2 text-white relative flex overflow-x-hidden h-12 mx-auto mt-2 border-2 border-gray-100 sm:w-3/5 lg:w-3/5 overflow-y-hidden">
+            {/* <div className="bg-[rgb(29,70,30)] rounded-md items-center px-2 text-white relative flex overflow-x-hidden h-12 mx-auto mt-2 border-2 border-gray-100 sm:w-3/5 lg:w-3/5 overflow-y-hidden">
                 <div>
                     <VolumeUpOutlined />
                 </div>
@@ -331,7 +331,7 @@ const Home = () => {
             </div> */}
 
             {/*Navigation bar */}
-            <div className="bg-red-800 flex-col  text-black font-semibold relative flex overflow-x-hidden  mx-1 py-2  sm:w-3/5 lg:w-3/5 overflow-y-hidden">
+            <div className="bg-[rgb(29,70,30)] flex-col  text-black font-semibold relative flex overflow-x-hidden  mx-1 py-2  sm:w-3/5 lg:w-3/5 overflow-y-hidden">
                 <div className="flex flex-row justify-around text-xs items-center w-full py-2 px-3">
                     <div className='cursor-pointer mx-2 flex flex-col justify-center items-center'>
                         <img src={recharge} alt="recharge" className='w-10' onClick={() => navigate('/recharge')} />
@@ -384,13 +384,13 @@ const Home = () => {
                     </div>
                     <button
                         onClick={() => navigate('/team')}
-                        className='w-full text-lg rounded-md bg-confirm text-white font-semibold text-center py-4'>
+                        className='w-full text-lg rounded-md bg-[rgb(62,146,63)] text-white font-semibold text-center py-4'>
                         View team commissions
                     </button>
                 </div>
             </div>
 
-            {/* <div className='bg-red-800 text-md text-white flex mt-2 items-center  mb-2 sm:w-3/5 lg:w-3/5 mx-5'>
+            {/* <div className='bg-[rgb(29,70,30)] text-md text-white flex mt-2 items-center  mb-2 sm:w-3/5 lg:w-3/5 mx-5'>
                 <div className={`w-1/2 text-center  py-5 ${currentVisible === 'big' ? ' text-white font-medium bg-red-700' : ' bg-nselected text-black'}`} onClick={() => setCurrentVisible('big')}>Daily Income</div>
                 <div className={`w-1/2 text-center  py-5 ${currentVisible === 'short' ? ' text-white font-medium bg-red-700' : ' bg-nselected text-black'}`} onClick={() => setCurrentVisible('short')}>Cycle Plan</div>
             </div> */}
@@ -524,7 +524,7 @@ const Home = () => {
 
             {/*Navigation Bar 2 bg-[#1cb5b2]*/}
             {welcomeShow && false ? (
-                <div className="fixed bottom-0 z-10 bg-gray-50 rounded-none text-red-800 flex overflow-x-hidden  mx-auto mt-2 border-2 border-gray-100 w-full overflow-y-hidden">
+                <div className="fixed bottom-0 z-10 bg-gray-50 rounded-none text-red-800 flex overflow-x-hidden  mx-auto mt-2 border-2 border-black w-full overflow-y-hidden">
                     <div className="flex flex-row justify-around items-center w-full py-1 text-xs font-normal">
                         <div className='cursor-pointer mx-2 flex flex-col justify-center items-center'>
                             <img src={home} alt="online" className='w-6' />

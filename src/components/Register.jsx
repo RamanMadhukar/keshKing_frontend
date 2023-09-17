@@ -134,7 +134,7 @@ const Register = () => {
     }
     //[#0096D5]
     return (
-        <div className='relative bg-red-800'>
+        <div className='relative bg-[rgb(29,70,30)]'>
             {toasterShow ? <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
                 <div className='flex gap-2 items-center justify-center bg-black py-[10px] px-4  rounded-[4px] opacity-80 text-white '>
                     <div>{toasterText}</div>
@@ -146,7 +146,7 @@ const Register = () => {
                 </div> : null}
                 <div className='text-[16px]'>{text}</div>
             </div> : null}
-            <div className='flex items-center text-center bg-red-800 font-sans text-white pt-2 text-lg pb-2'>
+            <div className='flex items-center text-center bg-[rgb(29,70,30)] font-sans text-white pt-2 text-lg pb-2'>
                 <div className="flex flex-row items-center absolute left-2" onClick={() => navigate('/login')}>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
@@ -222,7 +222,7 @@ const Register = () => {
                     </div>
                 </div>
 
-                <button onClick={handleRegister} className='bg-[#63d0d7] text-white text-center py-[10px]  rounded-md text-md mt-5'>Sign Up</button>
+                <button onClick={handleRegister} className='bg-[rgb(62,146,63)] text-white text-center py-[10px]  rounded-md text-md mt-5'>Sign Up</button>
                 {/* <div onClick={() => navigate('/login')} className='cursor-pointer text-center text-red-800  p-[7px] mb-2 bg-white  rounded-full border border-gray-200'>
                     Already have an account, log in
                 </div> */}

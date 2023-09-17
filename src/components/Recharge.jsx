@@ -40,7 +40,7 @@ const Recharge = () => {
     }
     //[#2e9afe] #4daaff #298ae4 [#2e9afe]
     return (
-        <div className='bg-red-800 h-screen relative'>
+        <div className='bg-[rgb(29,70,30)] h-screen relative'>
             {toasterShow ? <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
                 <div className='flex gap-2 bg-black opacity-80 text-white px-2 w-10/12 py-1 rounded-md'>
                     <div className='text-center w-full'>{toasterText}</div>
@@ -173,7 +173,7 @@ const Recharge = () => {
                 </div>
 
                 <div className="cnf_recharge w-[85%] mx-auto mt-7">
-                    <button onClick={handleRecharge} className='w-full bg-red-800 py-2 font-semibold rounded-md text-white text-lg '>Confirm Recharge</button>
+                    <button onClick={handleRecharge} className='w-full bg-[rgb(29,70,30)] py-2 font-semibold rounded-md text-white text-lg '>Confirm Recharge</button>
                 </div>
 
                 <ol className='text-[#ff0000] text-[13px] flex flex-col gap-1 mt-2'>

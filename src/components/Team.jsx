@@ -82,7 +82,7 @@ const Team = () => {
 
   if (loading || userDetails === null) {
     return (
-      <div className='bg-red-800'>
+      <div className='bg-[rgb(29,70,30)]'>
         {/* [#2e9afe] */}
         <div className="options text-center  text-recharge-bg flex justify-between  bg-confirm text-md  font-normal mb-2 py-3 items-center px-2">
           <div className="flex items-center font-bold">
@@ -105,8 +105,8 @@ const Team = () => {
         <div className="px-3 text-center font-bold">Total Recharge: {0}</div>      
       </div>
 
-        <div className='flex flex-col items-center w-full   bg-red-800 '>
-          <div className="flex items-center w-full px-4 bg-red-800 font-[300] mt-3">
+        <div className='flex flex-col items-center w-full   bg-[rgb(29,70,30)] '>
+          <div className="flex items-center w-full px-4 bg-[rgb(29,70,30)] font-[300] mt-3">
             <div className={`${currentVisible === 'level1' ? 'text-white border-b-2 border-red-800 bg-confirm' : 'bg-white border-b-[0.5px] border-l-[0.5px] border-r-[0.5px] border-confirm text-confirm'} px-1 py-[2px] text-center text-sm w-1/3 font-normal`} onClick={e => setCurrentVisible('level1')}>B-15% (0)</div>
             <div className={`${currentVisible === 'level2' ? 'text-white border-b-2 border-red-800 bg-confirm' : 'bg-white border-b-[0.5px] border-l-[0.5px] border-r-[0.5px] border-confirm text-confirm'} px-1 py-[2px] text-center text-sm w-1/3 font-normal`} onClick={e => setCurrentVisible('level2')}>C-3% (0)</div>
             <div className={`${currentVisible === 'level3' ? 'text-white border-b-2 border-red-800 bg-confirm' : 'bg-white border-b-[0.5px] border-l-[0.5px] border-r-[0.5px] border-confirm text-confirm'} px-1 py-[2px] text-center text-sm w-1/3 font-normal`} onClick={e => setCurrentVisible('level3')}>D-2% (0)</div>
@@ -143,7 +143,7 @@ const Team = () => {
   }
 
   return (
-    <div className='bg-red-800'>
+    <div className='bg-[rgb(29,70,30)]'>
       {/* [#2e9afe] */}
       <div className="options text-center  text-recharge-bg flex justify-between  bg-confirm text-md  font-normal mb-2 py-3 items-center px-2">
         <div className="flex items-center font-bold">
@@ -169,7 +169,7 @@ const Team = () => {
             className='outline-none rounded-full bg-gray-100 py-[2px] w-[100px]' />
         </div>
         <div>
-          <button className="bg-red-800 text-white text-xs px-2 rounded-full py-[3px] flex items-center gap-1">
+          <button className="bg-[rgb(29,70,30)] text-white text-xs px-2 rounded-full py-[3px] flex items-center gap-1">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"
               className="w-3 h-3 stroke-white">
               <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
@@ -200,10 +200,10 @@ const Team = () => {
 
 
 
-      <div className='flex flex-col items-center w-full   bg-red-800 '>
+      <div className='flex flex-col items-center w-full   bg-[rgb(29,70,30)] '>
 
 
-        <div className="flex items-center w-full px-4 bg-red-800 font-[300] mt-3">
+        <div className="flex items-center w-full px-4 bg-[rgb(29,70,30)] font-[300] mt-3">
           <div className={`${currentVisible === 'level1' ? 'text-white border-b-2 border-red-800 bg-confirm' : 'bg-white border-b-[0.5px] border-l-[0.5px] border-r-[0.5px] border-confirm text-confirm'} px-1 py-[2px] text-center text-sm w-1/3 font-normal`} onClick={e => setCurrentVisible('level1')}>B-15% ({userDetails.directMember.length})</div>
           <div className={`${currentVisible === 'level2' ? 'text-white border-b-2 border-red-800 bg-confirm' : 'bg-white border-b-[0.5px] border-l-[0.5px] border-r-[0.5px] border-confirm text-confirm'} px-1 py-[2px] text-center text-sm w-1/3 font-normal`} onClick={e => setCurrentVisible('level2')}>C-3% ({userDetails.indirectMember.length})</div>
           <div className={`${currentVisible === 'level3' ? 'text-white border-b-2 border-red-800 bg-confirm' : 'bg-white border-b-[0.5px] border-l-[0.5px] border-r-[0.5px] border-confirm text-confirm'} px-1 py-[2px] text-center text-sm w-1/3 font-normal`} onClick={e => setCurrentVisible('level3')}>D-2% ({userDetails.in_indirectMember.length})</div>

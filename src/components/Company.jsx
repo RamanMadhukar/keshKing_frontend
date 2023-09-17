@@ -20,9 +20,9 @@ import company_image from '../images/dj/company_image.jpg';
 const Company = () => {
     const navigate = useNavigate();
     return (
-        <div className='bg-white w-full '>
+        <div className='bg-white w-full h-screen '>
             {/* [#2e9afe] */}
-            <div className="options text-center  text-recharge-bg flex justify-between  bg-confirm text-md  font-normal mb-2 py-3 items-center px-2">
+            <div className="options text-center  text-recharge-bg flex justify-between  bg-[rgb(29,70,30)] text-md  font-normal mb-2 py-3 items-center px-2">
                 <div className="flex items-center font-bold">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" onClick={() => navigate('/home')}
@@ -60,8 +60,8 @@ const Company = () => {
                     {/* <div className='font-semibold'>CEAT</div> */}
                     <div className='text-[16px] font-semibold'>
                         Staying healthy and maintaining optimal wellness is becoming increasingly important in our fast-paced, stressful lives. A balanced diet is essential, but our hectic schedules can sometimes make meeting all our nutritional needs challenging. This is where supplements can play a pivotal role. They're not a substitute for a balanced diet but can help fill nutritional gaps and support various health goals.
-                        HK Vitals provides top-quality supplements to aid in filling nutritional gaps in our fast-paced lives. From daily essentials to weight management and supplements for hair care, HK Vitals cater to your unique wellness needs. Whether you are a fitness enthusiast or aiming for better well-being, HK Vitals supports your health journey with the right mix of nutrients.
-                        Let's check out some of the best nutritional supplements at HK Vitals that cater to all your health requirements and provide overall well-being.
+                        Kesh King provides top-quality supplements to aid in filling nutritional gaps in our fast-paced lives. From daily essentials to weight management and supplements for hair care, Kesh King cater to your unique wellness needs. Whether you are a fitness enthusiast or aiming for better well-being, Kesh King supports your health journey with the right mix of nutrients.
+                        Let's check out some of the best nutritional supplements at Kesh King that cater to all your health requirements and provide overall well-being.
 
                     </div>
 

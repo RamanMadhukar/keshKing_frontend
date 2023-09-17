@@ -52,7 +52,7 @@ const Record = () => {
     }, []);
     //[#2e9afe]
     return (
-        <div className=' bg-red-800 w-full pb-3 sm:h-[1000px] md:h-screen h-screen'>
+        <div className=' bg-[rgb(29,70,30)] w-full pb-3 sm:h-[1000px] md:h-screen h-screen'>
 
             <div className="options text-center  text-recharge-bg flex justify-between  bg-confirm text-md  font-normal mb-2 py-3 items-center px-2">
                 <div className="flex items-center font-bold">
@@ -81,10 +81,10 @@ const Record = () => {
                     <input type="date" className="bg-white border-2 border-gray-300 text-gray-900 sm:text-xs rounded-full focus:ring-slate-500 focus:border-slate-500 block w-full  px-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500" placeholder="Select date" />
                 </div>
                 
-                <button className='bg-red-800 shadow-lg w-20 text-center  ml-3 text-white rounded-full py-1'>Search</button>
+                <button className='bg-[rgb(29,70,30)] shadow-lg w-20 text-center  ml-3 text-white rounded-full py-1'>Search</button>
             </div> */}
             {/* [#bce4ed] */}
-            <div className='records w-full flex  bg-red-800 font-normal items-center rounded-lg mt-3'>
+            <div className='records w-full flex  bg-[rgb(29,70,30)] font-normal items-center rounded-lg mt-3'>
                 <div className='w-full flex mx-3'>
                     <div className={`h-[25px] border-[0.5px] border-gray-200 border-opacity-80 text-sm cursor-pointer flex items-center justify-center w-1/3 text-center ${currentRecord === 'all' ? 'bg-confirm text-white' : 'bg-white text-confirm'}`} onClick={() => setCurrentRecord('all')}>All Types</div>
                     <div className={`h-[25px] border-[0.5px] border-gray-200 border-opacity-80 text-sm cursor-pointer flex items-center justify-center w-1/3 text-center ${currentRecord === 'withdrawals' ? 'bg-confirm text-white' : 'bg-white text-confirm'}`} onClick={() => setCurrentRecord('withdrawals')}>Withdrawls</div>
@@ -115,7 +115,7 @@ const Record = () => {
                                     <div className='text-blue-800'><span className='text-white font-medium'>Recharge - </span>{new Intl.NumberFormat().format(element.recharge_value)}</div>
                                 </div>
                                 <div>
-                                    <div className='bg-red-800 px-2 py-1 font-semibold rounded-md text-sm text-white'>{nameMapper[String(element.status)]}</div>
+                                    <div className='bg-[rgb(29,70,30)] px-2 py-1 font-semibold rounded-md text-sm text-white'>{nameMapper[String(element.status)]}</div>
                                 </div>
 
                             </div>
@@ -132,7 +132,7 @@ const Record = () => {
                                     <div className='text-blue-800'><span className='text-white font-medium'>Withdrawal - </span>{new Intl.NumberFormat().format(element.withdrawalAmount)}</div>
                                 </div>
                                 <div>
-                                    <div className='bg-red-800 px-2 py-1 font-semibold rounded-md text-sm text-white'>{nameMapper[String(element.status)]}</div>
+                                    <div className='bg-[rgb(29,70,30)] px-2 py-1 font-semibold rounded-md text-sm text-white'>{nameMapper[String(element.status)]}</div>
                                 </div>
 
                             </div>

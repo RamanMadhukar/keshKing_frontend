@@ -193,7 +193,7 @@ const Withdrawal = () => {
     }
     //[#2e9afe]
     return (
-        <div className='bg-red-800 flex flex-col  sm:h-[1000px] md:h-[950px] relative'>
+        <div className='bg-[rgb(29,70,30)] flex flex-col  sm:h-[1000px] md:h-[950px] relative'>
             {toasterShow ? <div className='absolute top-1/2 w-full left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
                 <div className='flex gap-2 bg-black opacity-80 text-white mx-auto w-4/5 px-2 py-1 rounded-md'>
                     <div className='text-center w-full'>{toasterText}</div>
@@ -209,8 +209,8 @@ const Withdrawal = () => {
                 >
                     <h1 className='text-gray-600 mb-3 text-xl'>Are you Sure?</h1>
                     <div>
-                        <button onClick={() => handleWithdrawal()} className='bg-red-800 text-white px-2 py-1 rounded-lg shadow-md w-[64px]'>Yes</button>
-                        <button onClick={() => setIsOpen(false)} className='bg-red-800 text-white px-2 py-1 rounded-lg shadow-md w-[64px] ml-2'>cancel</button>
+                        <button onClick={() => handleWithdrawal()} className='bg-[rgb(29,70,30)] text-white px-2 py-1 rounded-lg shadow-md w-[64px]'>Yes</button>
+                        <button onClick={() => setIsOpen(false)} className='bg-[rgb(29,70,30)] text-white px-2 py-1 rounded-lg shadow-md w-[64px] ml-2'>cancel</button>
                     </div>
                 </ReactModal>
             </div>
@@ -297,7 +297,7 @@ const Withdrawal = () => {
                 </div> */}
 
                 {/* <div className="balance flex justify-between text-gray-600 sm:text-md md:text-xl p-3">
-                    <div className="wpwd w-2/3">OTP: <span className='text-sm bg-red-800 text-white px-3 py-1 hover:cursor-pointer rounded-full' onClick={() => handleOTPSend(String(Math.floor(100000 + Math.random() * 900000)))}>Send OTP</span></div>
+                    <div className="wpwd w-2/3">OTP: <span className='text-sm bg-[rgb(29,70,30)] text-white px-3 py-1 hover:cursor-pointer rounded-full' onClick={() => handleOTPSend(String(Math.floor(100000 + Math.random() * 900000)))}>Send OTP</span></div>
                     <input type="password" onChange={e => setOtp(e.target.value)} placeholder='Enter OTP' className='placeholder:text-xs outline-none bg-[#d3d6fe] w-1/3' />
                 </div> */}
 
@@ -320,7 +320,7 @@ const Withdrawal = () => {
                 }
             </div>
         
-            <div className="part1 bg-red-800  rounded-lg mx-3 flex flex-col gap-1 text-[14px]">
+            <div className="part1 bg-[rgb(29,70,30)]  rounded-lg mx-3 flex flex-col gap-1 text-[14px]">
                 <div className='text-gray-500 font-medium'><br />
                     1: Valid members can apply for withdrawal. The number of withdrawals is unlimited. The minimum withdrawal amount is 200rs.<br />
                     2: IFSC should be 11 characters and 5th character should be 0. If you fill in wrong bank information, your withdrawal will fail.<br />

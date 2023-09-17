@@ -21,7 +21,7 @@ module.exports = {
         'nselected':'#dbdbdb',
         'pre_sale':"#efefef",
         'bank_color':'#3e5a93',
-        'confirm': '#63d0d7'
+        'confirm': 'rgb(29,70,30)'
       },
       animation: {
         marquee: 'marquee 8s linear infinite',

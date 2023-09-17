@@ -93,7 +93,7 @@ const Login = () => {
     }
 
     return (
-        <div className='relative bg-red-800'>
+        <div className='relative bg-[rgb(29,70,30)]'>
             {toasterShow?<div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
                 <div className='flex gap-2 mx-auto bg-black opacity-70 text-white px-2 py-1 rounded-md'>
                     <div>{toasterText}</div>
@@ -153,9 +153,9 @@ const Login = () => {
 
                 {/*[#0096D5] */}
                 <div className='mt-4 flex flex-col gap-6'>
-                    <button onClick={handleSignIn} className='bg-confirm w-full py-[10px] text-[20px] text-white rounded-md shadow-ceatShadow shadow-red-800
+                    <button onClick={handleSignIn} className='bg-[rgb(62,146,63)] w-full py-[10px] text-[20px] text-white rounded-md shadow-ceatShadow shadow-red-800
                     '>Sign in</button>
-                    {/* <button onClick={() => navigate('/register')} className='bg-red-800 w-full py-[10px] text-[20px] text-white rounded-full shadow-ceatShadow shadow-red-800
+                    {/* <button onClick={() => navigate('/register')} className='bg-[rgb(29,70,30)] w-full py-[10px] text-[20px] text-white rounded-full shadow-ceatShadow shadow-red-800
                     '>Register</button> */}
                 </div>
                 {/*[#379EFE] */}

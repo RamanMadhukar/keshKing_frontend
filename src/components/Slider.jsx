@@ -14,10 +14,10 @@ import lenscart_slide5 from '../images/lenscart_slide5.gif'
 import asset11 from '../images/asml/asset 11.jpeg';
 import asset12 from '../images/asml/asset 12.jpeg';
 
-import s1 from '../images/dj/slide1.jpg';
-import s2 from '../images/dj/slide2.jpg';
-import s3 from '../images/dj/slide3.jpg';
-import s4 from '../images/dj/slide4.jpg';
+import s1 from '../images/dj/s1.jpg';
+import s2 from '../images/dj/s2.jpg';
+import s3 from '../images/dj/s3.webp';
+import s4 from '../images/dj/s4.jpg';
 
 import slide1 from '../images/dj/slide1.png';
 import slide2 from '../images/asml/slide2.jpg';

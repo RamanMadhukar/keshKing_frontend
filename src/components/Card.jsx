@@ -48,16 +48,16 @@ const Card = ({ pre_sale, long_plan_state, product_type, product_image, plan_nam
           {
             pre_sale === false ? (
               product_type === 'long' ? (
-                <div className="cursor-pointer btn text-white font-semibold text-center  py-2  px-1 mt-5 text-sm mb-2 shadow-xs rounded-md  w-[85%] mx-auto bg-confirm border-white border"
+                <div className="cursor-pointer btn text-white font-semibold text-center  py-2  px-1 mt-5 text-sm mb-2 shadow-xs rounded-md  w-[85%] mx-auto bg-[rgb(62,146,63)] border-white border"
                   onClick={() => handleClick(product_type, plan_name, plan_type, plan_amount, plan_daily_earning, plan_cycle)}>
                   Get
                 </div>
               ) : (long_plan_state === true) ? (
-                <div className="cursor-pointer btn text-white font-semibold text-center  py-2  px-1 mt-5 text-sm mb-2 shadow-xs rounded-md  w-[85%] mx-auto bg-confirm border-white border">
+                <div className="cursor-pointer btn text-white font-semibold text-center  py-2  px-1 mt-5 text-sm mb-2 shadow-xs rounded-md  w-[85%] mx-auto bg-[rgb(62,146,63)] border-white border">
                   Get
                 </div>
               ) : (
-                <div className="cursor-pointer btn text-white font-semibold text-center  py-2  px-1 mt-5 text-sm mb-2 shadow-xs rounded-md  w-[85%] mx-auto bg-confirm border-white border"
+                <div className="cursor-pointer btn text-white font-semibold text-center  py-2  px-1 mt-5 text-sm mb-2 shadow-xs rounded-md  w-[85%] mx-auto bg-[rgb(62,146,63)] border-white border"
                   onClick={() => handleClick(product_type, plan_name, plan_type, plan_amount, plan_daily_earning, plan_cycle)}>
                   Get
                 </div>

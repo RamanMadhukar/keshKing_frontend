@@ -46,7 +46,7 @@ const Invite = () => {
 
     if (loading || userDetails === null) {
         return (
-            <div className=' bg-red-800  flex flex-col text-white font-light  relative'>
+            <div className=' bg-[rgb(29,70,30)]  flex flex-col text-white font-light  relative'>
                 <div className="options text-center  text-recharge-bg flex justify-between  bg-confirm text-md  font-normal mb-2 py-3 items-center px-2">
                     <div className="flex items-center font-bold">
                         <div>
@@ -81,7 +81,7 @@ const Invite = () => {
     }
     //[#2e9afe]
     return (
-        <div className=' bg-red-800  flex flex-col text-white font-light relative'>
+        <div className=' bg-[rgb(29,70,30)]  flex flex-col text-white font-light relative'>
             {toasterShow ? <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
                 <div className='flex gap-2 bg-black opacity-80 text-white px-2 py-1 rounded-md'>
                     <div>{toasterText}</div>
@@ -120,7 +120,7 @@ const Invite = () => {
             </div>
 
             {/* <div className="info  sm:text-xs md:text-md flex flex-col gap-2 rounded-lg bg-white mt-5">
-                <div className='text-left bg-red-800 font-semibold rounded-t-lg text-white text-lg border-b pl-2 py-2 border-red-800'>Invitation Rewards:</div>
+                <div className='text-left bg-[rgb(29,70,30)] font-semibold rounded-t-lg text-white text-lg border-b pl-2 py-2 border-red-800'>Invitation Rewards:</div>
                 <span className='p-2 text-black font-semibold text-sm'>
                     Level 1 = <span className='text-red-600'> 20%</span>
                     <br />
@@ -136,7 +136,7 @@ const Invite = () => {
                     <div className='font-bold text-sm'>Invitation Link</div>
                     <div className='py-1 px-1 text-xs rounded-md border overflow-hidden border-red-800 mt-2'>{`https://www.electricboat4s.website/register/invite_code/${userDetails.user_invite}`}</div>
                     <CopyToClipboard text={`https://www.electricboat4s.website/register/invite_code/${userDetails.user_invite}`} onCopy={() => toaster('copy success')}>
-                        <span className='w-[80px] text-sm text-center bg-red-800 text-white p-2'>copy</span>
+                        <span className='w-[80px] text-sm text-center bg-[rgb(29,70,30)] text-white p-2'>copy</span>
                     </CopyToClipboard>
                 </div>
 
@@ -144,13 +144,13 @@ const Invite = () => {
                     <div className='font-bold text-sm'>Invitation code</div>
                     <div className='py-1 px-1 text-xs rounded-md border border-red-800 mt-2'>{userDetails.user_invite}</div>
                     <CopyToClipboard text={userDetails.user_invite} onCopy={() => toaster('copy success')}>
-                        <span className='w-[80px] text-sm text-center bg-red-800 text-white p-2'>copy</span>
+                        <span className='w-[80px] text-sm text-center bg-[rgb(29,70,30)] text-white p-2'>copy</span>
                     </CopyToClipboard>
                 </div>
             </div> */}
 
 
-            {/* <div className="qr mx-auto flex flex-col justify-center items-center mt-1 p-1 bg-red-800 rounded-md">
+            {/* <div className="qr mx-auto flex flex-col justify-center items-center mt-1 p-1 bg-[rgb(29,70,30)] rounded-md">
                 <QRCode
                     size={140}
                     style={{ height: "auto", maxWidth: "100%", width: "100%" }}

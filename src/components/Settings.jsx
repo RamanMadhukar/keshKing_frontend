@@ -34,7 +34,7 @@ const Settings = () => {
 
     //[#2e9afe]
     return (
-        <div className='bg-red-800 h-screen'>
+        <div className='bg-[rgb(29,70,30)] h-screen'>
             <div>
                 <ReactModal
                     isOpen={logout_popup}
@@ -123,7 +123,7 @@ const Settings = () => {
                 </div>
 
                 <div onClick={() => setLogout_popup(true)} className="flex flex-row justify-center text-xl
-               w-[80%] mx-auto py-2 mt-5 text-center rounded-full bg-confirm  text-white font-semibold text-opacity-80">
+               w-[80%] mx-auto py-2 mt-5 text-center rounded-full bg-[rgb(62,146,63)]  text-white font-semibold text-opacity-80">
                     <div>Sign out</div>
                 </div>
             </div>

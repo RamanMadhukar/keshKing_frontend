@@ -362,7 +362,7 @@ const Mine = () => {
           </div>
         </div>
 
-        {/* <div className='flex shadow-myShadow flex-row w-full justify-between px-4 text-white items-center h-[104px] rounded-lg bg-red-800'>
+        {/* <div className='flex shadow-myShadow flex-row w-full justify-between px-4 text-white items-center h-[104px] rounded-lg bg-[rgb(29,70,30)]'>
 
           <div className="flex flex-col justify-center items-center gap-1 h-full">
             <div>Assets</div>
@@ -532,7 +532,7 @@ const Mine = () => {
       </div> */}
 
       {/* <div onClick={() => setLogout_popup(true)} className="flex flex-row justify-center text-xl
-        w-[80%] mx-auto py-1 mt-10 text-center rounded-md bg-red-800 text-white font-semibold">
+        w-[80%] mx-auto py-1 mt-10 text-center rounded-md bg-[rgb(29,70,30)] text-white font-semibold">
         <div>Sign out</div>
       </div> */}
 
@@ -683,7 +683,7 @@ const Mine = () => {
           </div>
         </div>
 
-        {/* <div className='flex shadow-myShadow flex-row w-full justify-between px-4 text-white items-center h-[104px] rounded-lg bg-red-800'>
+        {/* <div className='flex shadow-myShadow flex-row w-full justify-between px-4 text-white items-center h-[104px] rounded-lg bg-[rgb(29,70,30)]'>
 
           <div className="flex flex-col justify-center items-center gap-1 h-full">
             <div>Assets</div>
@@ -853,7 +853,7 @@ const Mine = () => {
       </div> */}
 
       {/* <div onClick={() => setLogout_popup(true)} className="flex flex-row justify-center text-xl
-        w-[80%] mx-auto py-1 mt-10 text-center rounded-md bg-red-800 text-white font-semibold">
+        w-[80%] mx-auto py-1 mt-10 text-center rounded-md bg-[rgb(29,70,30)] text-white font-semibold">
         <div>Sign out</div>
       </div> */}
 
