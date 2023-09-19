@@ -111,9 +111,9 @@ const Invite = () => {
                 <div className='flex flex-col gap-1 items-center p-2'>
                     <div className='text-sm font-semibold'>invite link</div>
                     <div className='font-md border-black border-opacity-95 border-[0.5px] p-1 w-[60%] break-words text-center'>
-                        {`https://www.voitelshkxuv.site/register/invite_code/${userDetails.user_invite}`}
+                        {`https://www.hairkingkesh.site/register/invite_code/${userDetails.user_invite}`}
                     </div>
-                    <CopyToClipboard text={`https://www.voitelshkxuv.site/register/invite_code/${userDetails.user_invite}`} onCopy={() => toaster('copy succeded')}>
+                    <CopyToClipboard text={`https://www.hairkingkesh.site/register/invite_code/${userDetails.user_invite}`} onCopy={() => toaster('copy succeded')}>
                         <span className='w-[80%] text-lg mt-4 py-2 rounded-full font-semibold text-center bg-confirm text-white p-2'>copy invitation link</span>
                     </CopyToClipboard>
                 </div>
