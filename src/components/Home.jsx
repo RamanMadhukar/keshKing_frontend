@@ -218,7 +218,7 @@ const Home = () => {
 
 
     return (
-        <div className='relative bg-[rgb(29,70,30)] px-1'>
+        <div className='relative bg-[rgb(29,70,30)] min-h-screen px-1'>
             {toasterShow ? <div className='w-[90%] absolute z-50 top-[500px] left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
                 <div className='flex gap-2 bg-black opacity-80 text-white px-2 py-1 rounded-md'>
                     <div>{toasterText}</div>
@@ -335,20 +335,20 @@ const Home = () => {
                 <div className="flex flex-row justify-around text-xs items-center w-full py-2 px-3">
                     <div className='cursor-pointer mx-2 flex flex-col justify-center items-center'>
                         <img src={recharge} alt="recharge" className='w-10' onClick={() => navigate('/recharge')} />
-                        <div className='text-[12px] text-black opacity-60 mt-1'>Recharge</div>
+                        <div className='text-[12px] text-white opacity-60 mt-1'>Recharge</div>
                     </div>
 
                     <div className='cursor-pointer mx-2 flex flex-col justify-center items-center'>
                         <img src={withdraw} alt="invite" className='w-10' onClick={() => isBetween() || true ?
                             navigate('/withdrawal', { state: { withdrawalPassword: originalwpwd, loginPassword: originalpwd } }) : toaster('You can withdraw only between 08:00 AM to 05:00 PM')
                         } />
-                        <div className='text-[12px] text-black opacity-60 mt-1 '>withdraw</div>
+                        <div className='text-[12px] text-white opacity-60 mt-1 '>withdraw</div>
                     </div>
 
 
                     <div onClick={() => navigate('/team')} className='cursor-pointer mx-2 flex flex-col justify-center items-center'>
                         <img src={myteams_home} alt="channel" className='w-10' />
-                        <div className='text-[12px] text-black opacity-60 mt-1'>My teams</div>
+                        <div className='text-[12px] text-white opacity-60 mt-1'>My teams</div>
                     </div>
 
 
@@ -356,13 +356,13 @@ const Home = () => {
                     <a href="https://telegram.me/hkvitals" className='no-underline text-black'>
                         <div className='cursor-pointer mx-2 flex flex-col justify-center items-center'>
                             <img src={telegram} alt="channel" className='w-10' />
-                            <div className='text-[12px] text-black opacity-60 mt-1'>Customer care</div>
+                            <div className='text-[12px] text-white opacity-60 mt-1'>Customer care</div>
                         </div>
                     </a>
 
                     <div onClick={() => navigate('/rewards')} className='cursor-pointer mx-2 flex flex-col justify-center items-center'>
                         <img src={bonus} alt="online" className='w-10' />
-                        <div className='text-[12px] text-black opacity-60 mt-1 '>bonus</div>
+                        <div className='text-[12px] text-white opacity-60 mt-1 '>bonus</div>
                     </div>
                 </div>
 

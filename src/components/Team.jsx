@@ -82,7 +82,7 @@ const Team = () => {
 
   if (loading || userDetails === null) {
     return (
-      <div className='bg-[rgb(29,70,30)]'>
+      <div className='bg-[rgb(29,70,30)] min-h-screen overflow-x-hidden text-white'>
         {/* [#2e9afe] */}
         <div className="options text-center  text-recharge-bg flex justify-between  bg-confirm text-md  font-normal mb-2 py-3 items-center px-2">
           <div className="flex items-center font-bold">
@@ -143,7 +143,7 @@ const Team = () => {
   }
 
   return (
-    <div className='bg-[rgb(29,70,30)]'>
+    <div className='bg-[rgb(29,70,30)] min-h-screen overflow-x-hidden text-white'>
       {/* [#2e9afe] */}
       <div className="options text-center  text-recharge-bg flex justify-between  bg-confirm text-md  font-normal mb-2 py-3 items-center px-2">
         <div className="flex items-center font-bold">
@@ -210,7 +210,7 @@ const Team = () => {
         </div>
 
         {currentVisible === 'level1' && (
-          <div className='flex text-red-800 items-center justify-center font-semibold flex-col w-full  text-lg  mt-0'>
+          <div className='flex text-white items-center justify-center font-semibold flex-col w-full  text-lg  mt-0'>
             {/* <div className='flex flex-col w-full'>
               <div>Level 1 Member: {userDetails.directMember.length}</div>
               <div>Level 1 Earning: &#8377;{(userDetails.directRecharge) * (amountDetails.level1_percent / 100)}</div>
@@ -227,7 +227,7 @@ const Team = () => {
             {/*{Math.max(0,element.recharge_amount + element.earning - element.balance)} */}
             {level1.map((element, index) => {
               return (
-                <div className="flex justify-center mx-6 my-1 items-center text-gray-800 font-normal text-sm py-2 px-2 shadow-md rounded-md  w-full" key={index}>
+                <div className="flex justify-center mx-6 my-1 items-center text-white font-normal text-sm py-2 px-2 shadow-md rounded-md  w-full" key={index}>
                   <div className='w-1/3'>{element.mobno}</div>
                   <div className='w-1/3'>B</div>
                   <div className='w-1/3'>{new Date(element.time).toDateString()}</div>
@@ -255,7 +255,7 @@ const Team = () => {
 
             {level2.map((element, index) => {
               return (
-                <div className="flex justify-center mx-6 my-1 items-center text-gray-800 font-normal text-sm py-2 px-2 shadow-md rounded-md  w-full" key={index}>
+                <div className="flex justify-center mx-6 my-1 items-center text-white font-normal text-sm py-2 px-2 shadow-md rounded-md  w-full" key={index}>
                   <div className='w-1/3'>{element.mobno}</div>
                   <div className='w-1/3'>C</div>
                   <div className='w-1/3'>{new Date(element.time).toDateString()}</div>
@@ -284,7 +284,7 @@ const Team = () => {
 
             {level3.map((element, index) => {
               return (
-                <div className="flex justify-center mx-6 my-1 items-center text-gray-800 font-normal text-sm py-2 px-2 shadow-md rounded-md  w-full" key={index}>
+                <div className="flex justify-center mx-6 my-1 items-center text-white font-normal text-sm py-2 px-2 shadow-md rounded-md  w-full" key={index}>
                   <div className='w-1/3'>{element.mobno}</div>
                   <div className='w-1/3'>D</div>
                   <div className='w-1/3'>{new Date(element.time).toDateString()}</div>

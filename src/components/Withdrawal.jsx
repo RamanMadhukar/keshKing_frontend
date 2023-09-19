@@ -193,7 +193,7 @@ const Withdrawal = () => {
     }
     //[#2e9afe]
     return (
-        <div className='bg-[rgb(29,70,30)] flex flex-col  sm:h-[1000px] md:h-[950px] relative'>
+        <div className='bg-[rgb(29,70,30)] min-h-screen flex flex-col  sm:h-[1000px] md:h-[950px] relative'>
             {toasterShow ? <div className='absolute top-1/2 w-full left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
                 <div className='flex gap-2 bg-black opacity-80 text-white mx-auto w-4/5 px-2 py-1 rounded-md'>
                     <div className='text-center w-full'>{toasterText}</div>
