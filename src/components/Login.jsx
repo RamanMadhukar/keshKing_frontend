@@ -116,7 +116,8 @@ const Login = () => {
                             <img src={mobile} className='w-5 h-5' />
                         </div>
                         <div>+</div>
-                        <div>91 <span className='ml-1'>|</span></div>
+                        <div>91 </div>
+                        <span className='ml-1'>|</span>
                     </div>
                     <div className='w-full flex flex-row items-center cstm_b rounded-md px-2 bg-white'>
                         <input value={mobno} onChange={e => setmobno(e.target.value)} type="text"
