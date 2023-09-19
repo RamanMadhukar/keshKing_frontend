@@ -93,7 +93,7 @@ const Login = () => {
     }
 
     return (
-        <div className='relative bg-[rgb(29,70,30)] min-h-screen text-white'>
+        <div className='relative bg-[rgb(29,70,30)] min-h-screen'>
             {toasterShow ? <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
                 <div className='flex gap-2 mx-auto bg-black opacity-70 text-white px-2 py-1 rounded-md'>
                     <div>{toasterText}</div>
@@ -137,8 +137,8 @@ const Login = () => {
                 </div>
 
                 <div className="options flex justify-between mt-1">
-                    <div className='cursor-pointer opacity-80 ' onClick={() => navigate('/forgot')}>Forget password</div>
-                    <div className='cursor-pointer opacity-80' onClick={() => navigate('/register')}>Register Now</div>
+                    <div className='cursor-pointer opacity-80 text-white ' onClick={() => navigate('/forgot')}>Forget password</div>
+                    <div className='cursor-pointer opacity-80 text-white' onClick={() => navigate('/register')}>Register Now</div>
                 </div>
 
                 {/* <div className=" items-center mb-3 p-2 mx-2 phoneno flex  bg-[#f1f1f1] rounded-md ">
