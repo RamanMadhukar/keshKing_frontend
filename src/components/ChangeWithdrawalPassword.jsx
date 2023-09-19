@@ -47,7 +47,7 @@ const ChangeWithdrawalPassword = () => {
     }
 
     return (
-        <div className='bg-[rgb(29,70,30)] h-screen sm:h-[700px] md:h-[950px] relative'>
+        <div className='bg-[rgb(29,70,30)] min-h-screen sm:h-[700px] md:h-[950px] relative'>
             {toasterShow ? <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
                 <div className='flex gap-2 bg-black opacity-80 text-white px-2 py-1 rounded-md'>
                     <div>{toasterText}</div>

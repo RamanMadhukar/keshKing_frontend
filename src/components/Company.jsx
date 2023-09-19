@@ -14,13 +14,13 @@ import company4 from '../images/asml/company4.jpg'
 import ceat_company1 from '../images/asml/ceat_company1.jpg';
 import ceat_company2 from '../images/asml/ceat_company2.jpg';
 import ceat_company3 from '../images/asml/ceat_company3.jpg';
-import company_image from '../images/dj/company_image.jpg';
+import company_image from '../images/dj/company.jpg';
 
 
 const Company = () => {
     const navigate = useNavigate();
     return (
-        <div className='bg-white w-full h-screen '>
+        <div className=' w-full min-h-screen bg-[rgb(29,70,30)] text-white '>
             {/* [#2e9afe] */}
             <div className="options text-center  text-recharge-bg flex justify-between  bg-[rgb(29,70,30)] text-md  font-normal mb-2 py-3 items-center px-2">
                 <div className="flex items-center font-bold">
@@ -59,10 +59,12 @@ const Company = () => {
                 <div className="flex flex-col gap-2 px-2  py-2 mt-1 rounded-md w-full mx-auto">
                     {/* <div className='font-semibold'>CEAT</div> */}
                     <div className='text-[16px] font-semibold'>
-                        Staying healthy and maintaining optimal wellness is becoming increasingly important in our fast-paced, stressful lives. A balanced diet is essential, but our hectic schedules can sometimes make meeting all our nutritional needs challenging. This is where supplements can play a pivotal role. They're not a substitute for a balanced diet but can help fill nutritional gaps and support various health goals.
-                        Kesh King provides top-quality supplements to aid in filling nutritional gaps in our fast-paced lives. From daily essentials to weight management and supplements for hair care, Kesh King cater to your unique wellness needs. Whether you are a fitness enthusiast or aiming for better well-being, Kesh King supports your health journey with the right mix of nutrients.
-                        Let's check out some of the best nutritional supplements at Kesh King that cater to all your health requirements and provide overall well-being.
-
+                        Kesh King Ayurvedic Oil is a potent hair health recipe designed for
+                        optimal hair fall control, hair growth and solving other hair problems.
+                        It is an ayurvedic proprietary medicinal preparation without any side effects.
+                        It has been made from 21 Ayurvedic herbs as per text prescribed in Ayurveda and Tel Pak Vidhi.
+                        It is also certified by eminent international hair institutes. It effectively delivers
+                        nutrients into the deepest layer of scalp & hair with the help of the revolutionary Deep Root Comb.
                     </div>
 
                 </div>

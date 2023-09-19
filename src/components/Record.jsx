@@ -52,7 +52,7 @@ const Record = () => {
     }, []);
     //[#2e9afe]
     return (
-        <div className=' bg-[rgb(29,70,30)] w-full pb-3 sm:h-[1000px] md:h-screen h-screen'>
+        <div className=' bg-[rgb(29,70,30)] min-h-screen w-full pb-3 sm:h-[1000px] md:h-screen h-screen'>
 
             <div className="options text-center  text-recharge-bg flex justify-between  bg-confirm text-md  font-normal mb-2 py-3 items-center px-2">
                 <div className="flex items-center font-bold">

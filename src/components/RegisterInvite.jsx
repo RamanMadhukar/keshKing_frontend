@@ -135,7 +135,7 @@ const Register = () => {
     }
     //[#0096D5]
     return (
-        <div className='relative bg-[rgb(29,70,30)]'>
+        <div className='relative bg-[rgb(29,70,30)] min-h-screen'>
             {toasterShow ? <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
                 <div className='flex gap-2 items-center justify-center bg-black py-[10px] px-4  rounded-[4px] opacity-80 text-white '>
                     <div>{toasterText}</div>

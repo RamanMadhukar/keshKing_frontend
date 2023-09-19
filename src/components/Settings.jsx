@@ -34,7 +34,7 @@ const Settings = () => {
 
     //[#2e9afe]
     return (
-        <div className='bg-[rgb(29,70,30)] h-screen'>
+        <div className='bg-[rgb(29,70,30)] h-screen min-h-screen'>
             <div>
                 <ReactModal
                     isOpen={logout_popup}

@@ -217,7 +217,7 @@ const ShortPlans = () => {
     }
 
     return (
-        <div className='relative bg-[rgb(29,70,30)]'>
+        <div className='relative bg-[rgb(29,70,30)] min-h-screen  text-white'>
             {toasterShow ? <div className='w-[50%] absolute z-5 top-[450px] left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
                 <div className='flex gap-2 bg-black opacity-80 text-center justify-center text-white px-2 py-1 rounded-md'>
                     <div>{toasterText}</div>

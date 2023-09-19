@@ -41,9 +41,9 @@ const Login = () => {
     const toaster = (text) => {
         setToasterText(text);
         setToasterShow(true);
-        setTimeout(()=>{
+        setTimeout(() => {
             setToasterShow(false);
-        },5000);
+        }, 5000);
     }
 
 
@@ -53,7 +53,7 @@ const Login = () => {
     }, []);
 
     const getBlockedUsers = async () => {
-        const dataRes = await axios.get(`${BASE_URL}/get_blocked_users`).then(res=>res.data);
+        const dataRes = await axios.get(`${BASE_URL}/get_blocked_users`).then(res => res.data);
         var temp = [];
         dataRes.forEach((doc) => {
             //console.log(doc.data());
@@ -62,21 +62,21 @@ const Login = () => {
         });
     }
 
-    const handleSignIn = async() => {
+    const handleSignIn = async () => {
         if (bloackedUsers.includes(String(mobno))) {
             toaster('You are blocked by the administrator!');
             return;
         }
         setLoading(true);
         setText('Loading')
-        
-        await axios.post(`${BASE_URL}/login`, {mobno, pwd})
-            .then(({data}) => {
-                if(data.user_details===null) {
+
+        await axios.post(`${BASE_URL}/login`, { mobno, pwd })
+            .then(({ data }) => {
+                if (data.user_details === null) {
                     throw "Could not login/something went wrong";
                 }
                 //console.log(data);
-                localStorage.setItem('uid',data.user_details._id);
+                localStorage.setItem('uid', data.user_details._id);
                 setText('Login Successful!');
                 setTimeout(() => {
                     navigate('/home');
@@ -93,24 +93,24 @@ const Login = () => {
     }
 
     return (
-        <div className='relative bg-[rgb(29,70,30)]'>
-            {toasterShow?<div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
+        <div className='relative bg-[rgb(29,70,30)] min-h-screen text-white'>
+            {toasterShow ? <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
                 <div className='flex gap-2 mx-auto bg-black opacity-70 text-white px-2 py-1 rounded-md'>
                     <div>{toasterText}</div>
                 </div>
-            </div>:null}
-            {loading  ? <div className='flex gap-2 items-center justify-center bg-black text-white py-[10px] px-4  rounded-[4px] opacity-70 absolute top-1/2 left-1/2 transform mt-[60px] -translate-x-1/2 -translate-y-1/2'>
-                {text==='Loading' ? <div>
+            </div> : null}
+            {loading ? <div className='flex gap-2 items-center justify-center bg-black text-white py-[10px] px-4  rounded-[4px] opacity-70 absolute top-1/2 left-1/2 transform mt-[60px] -translate-x-1/2 -translate-y-1/2'>
+                {text === 'Loading' ? <div>
                     <RotatingLines strokeColor='white' width='15' />
                 </div> : null}
                 <div className='text-sm'>{text}</div>
             </div> : null}
             <div className='text-center'>
-                <img src={register_logo} alt="hp_logo" className='m-auto md:w-2/6 sm:w-1/6 mt-28 mb-7' width={130} />
+                <img src={register_logo} alt="hp_logo" className='m-auto md:w-2/6 sm:w-1/6 pt-28 mb-7' width={130} />
             </div>
             <div className='flex flex-col m-auto w-[86%] gap-2'>
-                
-            <div className='outline-none flex items-center justify-between mb-2 py-1 px-1 rounded-md bg-white'>
+
+                <div className='outline-none flex items-center justify-between mb-2 py-1 px-1 rounded-md bg-white'>
                     <div className='flex flex-row text-xs items-center py-[10px] w-[35%] gap-2 justify-center'>
                         <div>
                             <img src={mobile} className='w-5 h-5' />
@@ -132,15 +132,15 @@ const Login = () => {
                     </div>
                     <div className='w-full flex flex-row items-center cstm_b rounded-md px-2 bg-white'>
                         <input value={pwd} onChange={e => setpwd(e.target.value)} type="password"
-                            className=' px-[1px] py-[10px] w-full outline-none rounded-md placeholder-gray-600 placeholder:text-[14px]' placeholder='please enter login password' name="password" id="pass" />
+                            className=' px-[1px] py-[10px] text-black w-full outline-none rounded-md placeholder-gray-600 placeholder:text-[14px]' placeholder='please enter login password' name="password" id="pass" />
                     </div>
                 </div>
 
                 <div className="options flex justify-between mt-1">
-                    <div className='cursor-pointer text-black opacity-80 ' onClick={() => navigate('/forgot')}>Forget password</div>
-                    <div className='text-black cursor-pointer opacity-80' onClick={() => navigate('/register')}>Register Now</div>
+                    <div className='cursor-pointer opacity-80 ' onClick={() => navigate('/forgot')}>Forget password</div>
+                    <div className='cursor-pointer opacity-80' onClick={() => navigate('/register')}>Register Now</div>
                 </div>
-                
+
                 {/* <div className=" items-center mb-3 p-2 mx-2 phoneno flex  bg-[#f1f1f1] rounded-md ">
                     <img src={asset0} alt="user" className='h-5 border-r-[1px] pr-2 border-solid border-gray-300' />
                     <input value={mobno} onChange={(e) => setmobno(e.target.value)} type="text" placeholder='Phone number' name="phone_no" id="phone_no" className='placeholder:text-gray-500 pl-1 bg-[#f1f1f1]  outline-none overflow-x-scroll' />
@@ -159,7 +159,7 @@ const Login = () => {
                     '>Register</button> */}
                 </div>
                 {/*[#379EFE] */}
-                
+
 
             </div>
         </div>

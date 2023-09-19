@@ -86,8 +86,8 @@ function App() {
           <Route path="/settings" element={<Settings />} />
           <Route path="/bank" element={<Bank />} />
           <Route path="/user_feedback" element={<ClientFeedback />} />
-          <Route path="/change_login_password" element={< ChangeLoginPassword />} />
-          <Route path="/change_withdrawal_password" element={< ChangeWithdrawalPassword />} />
+          <Route path="/change_login_password" element={<ChangeLoginPassword />} />
+          <Route path="/change_withdrawal_password" element={<ChangeWithdrawalPassword />} />
           <Route path="/recharge_window/:recharge_value" element={<RechargeWindow />} />
           <Route path="/recharge_approval" element={<Approval />} />
           <Route path="/withdrawal_approval" element={<WithdrawalApproval />} />

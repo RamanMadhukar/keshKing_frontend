@@ -66,7 +66,7 @@ const Rewards = () => {
 
 
     return (
-        <div className='md:h-screen bg-blue-50  h-screen relative bonus_image'>
+        <div className='md:h-screen bg-[rgb(29,70,30)]  min-h-screen relative bonus_image'>
 
             {toasterShow ? <div className='absolute top-1/2 z-30 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-md'>
                 <div className={`flex relative gap-2 ${toasterText.includes('₹') === false ? 'bg-black opacity-100 text-white px-2 py-1' : ''} rounded-md`}>
