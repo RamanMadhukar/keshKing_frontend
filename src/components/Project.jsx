@@ -175,7 +175,7 @@ const Project = () => {
                                 return (
                                     <div key={index} className='mx-auto w-[90%] mt-4 border-x-2 border-white border-b-2  rounded-lg '>
                                         <div className="text-lg p-3 text-white font-semibold bg-confirm rounded-t-lg">Plan Details</div>
-                                        <div className='p-3'>
+                                        <div className='p-3 text-white'>
                                             <div className='mb-1'>Plan Name: {element.plan_name}</div>
                                             <div className='mb-1'>Start Date: {element.date_purchased}</div>
                                             <div className='mb-1'>Plan Amount: &#8377;{element.plan_amount}</div>
