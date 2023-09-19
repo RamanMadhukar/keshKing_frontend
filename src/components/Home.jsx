@@ -515,10 +515,10 @@ const Home = () => {
                 <video controls src={"https://youtu.be/j2IReRTRDrk"} className='w-full' disablePictureInPicture={""} controlsList={"nodownload noplaybackrate "}></video>
             </div>
 
-            <div className="flex justify-between items-center mt-2 sm:w-4/5 lg:w-4/5 mx-1">
+            {/* <div className="flex justify-between items-center mt-2 sm:w-4/5 lg:w-4/5 mx-1">
                 <div className='text-2xl text-black font-semibold'>News</div>
                 <div className='text-sm opacity-70'>more &gt;</div>
-            </div>
+            </div> */}
 
 
 

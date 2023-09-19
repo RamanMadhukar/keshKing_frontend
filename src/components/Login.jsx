@@ -120,7 +120,7 @@ const Login = () => {
                     </div>
                     <div className='w-full flex flex-row items-center cstm_b rounded-md px-2 bg-white'>
                         <input value={mobno} onChange={e => setmobno(e.target.value)} type="text"
-                            className=' px-[1px] py-[10px] outline-none rounded-md placeholder-gray-600 placeholder:text-[14px]' placeholder='please enter mobile number' name="phoneno" id="phoneno" />
+                            className=' px-[1px] py-[10px] text-black outline-none rounded-md placeholder-gray-600 placeholder:text-[14px]' placeholder='please enter mobile number' name="phoneno" id="phoneno" />
                     </div>
                 </div>
 

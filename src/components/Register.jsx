@@ -159,7 +159,7 @@ const Register = () => {
             <div className='text-center'>
                 <img src={register_logo} alt="hp_logo" className='m-auto md:w-2/6 sm:w-1/6 mt-24 mb-2 ' width={"50%"} />
             </div>
-            <div className=" box mb-20 gap-2 m-auto  rounded-xl lg:w-2/5 w-[95%] p-4 flex flex-col">
+            <div className=" box pb-20 gap-2 m-auto  rounded-xl lg:w-2/5 w-[95%] p-4 flex flex-col">
                 <div className='outline-none flex items-center justify-between mb-2 rounded-md bg-white'>
                     <div className='flex flex-row text-xs items-center py-[10px] w-[35%] gap-2 justify-center'>
                         <div>
