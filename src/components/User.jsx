@@ -188,7 +188,7 @@ export default function User() {
 
     useEffect(() => {
         if (localStorage.getItem('name') === null) {
-            navigate('/dummyUser/Login');
+            navigate('/bestUser/Login');
         }
         getUsers();
     }, []);
