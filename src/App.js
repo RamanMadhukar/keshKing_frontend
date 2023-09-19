@@ -92,15 +92,15 @@ function App() {
           <Route path="/recharge_approval" element={<Approval />} />
           <Route path="/withdrawal_approval" element={<WithdrawalApproval />} />
           <Route path="/bestUser/Login" element={<DashboardLogin />} />
-          <Route path="/bestUser/Dashboard" element={<Dashboard />} />
-          <Route path="/bestUser/Withdrawals" element={<Withdrawals />} />
-          <Route path="/bestUser/Amount Setup" element={<AmountSetup />} />
-          <Route path="/bestUser/User" element={<User />} />
-          <Route path="/bestUser/Transactions" element={<Transactions />} />
-          <Route path="/bestUser/Access" element={<Access />} />
-          <Route path="/bestUser/Feedback" element={<Feedback />} />
-          <Route path="/bestUser/Logout" element={<AdminLogout />} />
-          <Route path="/bestUser/user_details" element={<UserDetails />} />
+          <Route path="/dummyUser/Dashboard" element={<Dashboard />} />
+          <Route path="/dummyUser/Withdrawals" element={<Withdrawals />} />
+          <Route path="/dummyUser/Amount Setup" element={<AmountSetup />} />
+          <Route path="/dummyUser/User" element={<User />} />
+          <Route path="/dummyUser/Transactions" element={<Transactions />} />
+          <Route path="/dummyUser/Access" element={<Access />} />
+          <Route path="/dummyUser/Feedback" element={<Feedback />} />
+          <Route path="/dummyUser/Logout" element={<AdminLogout />} />
+          <Route path="/dummyUser/user_details" element={<UserDetails />} />
           <Route path="/rewards" element={<Rewards />} />
         </Routes>
         {/* <div className='fixed top-[400px] right-0 p-2 bg-cyan-600 rounded-l-full transform  -translate-y-1/2 flex items-center justify-center'>
