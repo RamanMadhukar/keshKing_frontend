@@ -224,7 +224,7 @@ const ShortPlans = () => {
                 </div>
             </div> : null}
 
-            {/* {true ? */}
+            {planPurchaseShow ?
                 <div className='absolute w-[80%]  top-[450px] rounded-lg shadow-xl  z-10 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
                     <div className='flex flex-col justify-center gap-3 h-[130px] shadow-2xl border border-gray-300 items-center bg-white w-full text-cyan-400 rounded-xl'>
                         <div>
@@ -235,8 +235,8 @@ const ShortPlans = () => {
                         <div className='text-2xl text-center font-extrabold'>Successful Purchase</div>
                     </div>
                 </div>
-                {/* :
-                null} */}
+                :
+                null}
 
             <div >
                 <ReactModal
