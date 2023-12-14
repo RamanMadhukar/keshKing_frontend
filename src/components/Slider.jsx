@@ -16,7 +16,7 @@ import asset12 from '../images/asml/asset 12.jpeg';
 
 import s1 from '../images/dj/s1.jpg';
 import s2 from '../images/dj/s2.jpg';
-import s3 from '../images/dj/s3.webp';
+import s3 from '../images/dj/s3.jpg';
 import s4 from '../images/dj/s4.jpg';
 
 import slide1 from '../images/dj/slide1.png';
@@ -53,9 +53,9 @@ const Slider = () => {
           <img src={s3} className="h-[190px] rounded-md" alt="img_1" />
         </div>
 
-        <div>
+        {/* <div>
           <img src={s4} className="h-[190px] rounded-md" alt="img_1" />
-        </div>
+        </div> */}
 
       </Carousel>
     </div>
