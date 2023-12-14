@@ -59,12 +59,12 @@ const Company = () => {
                 <div className="flex flex-col gap-2 px-2  py-2 mt-1 rounded-md w-full mx-auto">
                     {/* <div className='font-semibold'>CEAT</div> */}
                     <div className='text-[16px] font-semibold'>
-                        Kesh King Ayurvedic Oil is a potent hair health recipe designed for
-                        optimal hair fall control, hair growth and solving other hair problems.
-                        It is an ayurvedic proprietary medicinal preparation without any side effects.
-                        It has been made from 21 Ayurvedic herbs as per text prescribed in Ayurveda and Tel Pak Vidhi.
-                        It is also certified by eminent international hair institutes. It effectively delivers
-                        nutrients into the deepest layer of scalp & hair with the help of the revolutionary Deep Root Comb.
+                    INOX Wind Limited is an Indian wind energy service provider, 
+                    headquartered in Noida, India, and a subsidiary of the INOX Group. 
+                    INOX Wind Limited manufactures Wind Turbine Generators (WTGs) and provides services such as wind resource assessment, 
+                    site acquisition, infrastructural development, erection and commissioning, a long term operations and maintenance of 
+                    wind power projects. The company was ranked 167th in Business Today's 2015 list of the 500 most valuable companies in India.
+                    
                     </div>
 
                 </div>

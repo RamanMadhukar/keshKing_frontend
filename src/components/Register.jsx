@@ -20,7 +20,7 @@ import tuborg_logo from '../images/tuborg_logo.svg';
 import jio from '../images/asml/jio.png';
 import jlogo from '../images/asml/jlogo.jpg';
 import boat_logo from '../images/asml/boat/boat_logo.jpg';
-import register_logo from '../images/dj/register_logo.png';
+import register_logo from '../images/dj/register_logo.jpg';
 import mobile from '../images/dj/mobile.png';
 import password from '../images/dj/password.png';
 import info from '../images/dj/info.png';
