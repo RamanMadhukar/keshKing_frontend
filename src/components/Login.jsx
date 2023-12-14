@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 import { RotatingLines } from 'react-loader-spinner';
 import axios from 'axios';
 import BASE_URL from '../api_url';
-import register_logo from '../images/dj/register_logo.png';
+import register_logo from '../images/dj/register_logo.jpg';
 import mobile from '../images/dj/mobile.png';
 import password from '../images/dj/password.png';
 
