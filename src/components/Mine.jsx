@@ -57,7 +57,7 @@ import home from '../images/dj/normal_home.png';
 import company from '../images/dj/company.png';
 import me from '../images/dj/me_page_image.png';
 import project from '../images/dj/Project.png';
-import register_logo from '../images/dj/register_logo.png';
+import register_logo from '../images/dj/register_logo.jpg';
 
 const customStyles2 = {
   content: {
