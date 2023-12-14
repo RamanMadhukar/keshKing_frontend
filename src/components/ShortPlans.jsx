@@ -105,7 +105,7 @@ const ShortPlans = () => {
                     setBalanceIndicator(false);
                 }, 3000);
             }
-            else if (userDetails.plans_purchased.filter(e => e.plan_name === 'Inoxwind 1').length > 0 && currPlan.plan_name === 'Inoxwind 1') {
+            else if (userDetails.plans_purchased.filter(e => e.plan_name === 'Inoxwind 0').length > 0 && currPlan.plan_name === 'Inoxwind 0') {
                 setIsOpen(false);
                 toaster('You can only purchase this plan once');
                 return;
@@ -234,6 +234,17 @@ const ShortPlans = () => {
                         <div className='grid grid-cols- '>
                             {userDetails && amountDetails?.plan_state && (
                                 <div className='grid grid-cols-2 gap-1'>
+
+                                    {userDetails && (amountDetails.plan_state[0] === 0) ? (
+                                        <span className='pointer-events-none'>
+                                            <Card pre_sale={amountDetails.plan_state[0] === 0} long_plan_state={userDetails.boughtLong < 1} product_type={"long"} product_image={p4} handleClick={handleClick} plan_name={"Inoxwind 0"} plan_cycle={90} plan_daily_earning={20} plan_amount={0} plan_type={'Big Plan'} />
+                                        </span>
+                                    ) : (
+                                        <span>
+                                            <Card pre_sale={amountDetails.plan_state[0] === 0} long_plan_state={userDetails.boughtLong < 1} product_type={"long"} product_image={p4} handleClick={handleClick} plan_name={"Inoxwind 0"} plan_cycle={90} plan_daily_earning={20} plan_amount={0} plan_type={'Big Plan'} />
+                                        </span>
+                                    )}
+
                                     {userDetails && (amountDetails.plan_state[0] === 0) ? (
                                         <span className='pointer-events-none'>
                                             <Card pre_sale={amountDetails.plan_state[0] === 0} long_plan_state={userDetails.boughtLong < 1} product_type={"long"} product_image={p1} handleClick={handleClick} plan_name={"Inoxwind 1"} plan_cycle={90} plan_daily_earning={180} plan_amount={600} plan_type={'Big Plan'} />
