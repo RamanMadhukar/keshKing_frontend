@@ -1,43 +1,15 @@
 import React, { useEffect, useLayoutEffect, useState } from 'react';
 import Slider from './Slider';
-import Card from './Card';
 import { useNavigate } from 'react-router-dom';
 import ReactModal from 'react-modal';
-
 import { useContext } from 'react';
 import { AmountContext } from '../App.js';
 import axios from 'axios';
 import BASE_URL from '../api_url';
-
-
 import recharge from '../images/dj/recharge.png';
 import withdraw from '../images/dj/withdraw.png';
-import myteams from '../images/dj/myteams.png';
 import bonus from '../images/dj/bonus.png';
 import telegram from '../images/dj/telegram.png';
-
-import asset0 from '../images/asml/asset 0.png';
-import asset1 from '../images/asml/asset 1.png';
-import asset2 from '../images/asml/asset 2.png';
-import asset5 from '../images/asml/asset 5.png';
-import asset6 from '../images/asml/asset 6.png';
-import asset7 from '../images/asml/asset 7.png';
-import asset8 from '../images/asml/asset 8.png';
-
-
-import plane from '../images/asml/plane.png';
-
-
-
-import bp1 from '../images/asml/boat/bp1.png';
-import bp2 from '../images/asml/boat/bp2.png';
-import bp3 from '../images/asml/boat/bp3.png';
-import bp4 from '../images/asml/boat/bp4.png';
-import bp5 from '../images/asml/boat/bp5.png';
-import bp6 from '../images/asml/boat/bp6.png';
-import bp7 from '../images/asml/boat/bp7.png';
-import bp8 from '../images/asml/boat/bp8.png';
-
 import home from '../images/dj/Home.png';
 import company from '../images/dj/company.png';
 import me from '../images/dj/me.png';
@@ -218,7 +190,7 @@ const Home = () => {
 
 
     return (
-        <div className='relative bg-[rgb(29,70,30)] min-h-screen px-1'>
+        <div className='relative bg-[#253e90] min-h-screen px-1'>
             {toasterShow ? <div className='w-[90%] absolute z-50 top-[500px] left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
                 <div className='flex gap-2 bg-black opacity-80 text-white px-2 py-1 rounded-md'>
                     <div>{toasterText}</div>
@@ -272,7 +244,7 @@ const Home = () => {
                             <h1 className='text-gray-600 mb-3 mt-2 text-[14px] mr-5 font-semibold'>Are you sure you want to buy this plan?</h1>
 
                             <div className='flex justify-end pt-4 text-[14px]'>
-                                <button onClick={() => closeModal('ok')} className='bg-[rgb(29,70,30)] text-white px-2 py-1   w-[64px]'>Yes</button>
+                                <button onClick={() => closeModal('ok')} className='bg-[#19244b] text-white px-2 py-1   w-[64px]'>Yes</button>
                                 <button onClick={() => closeModal('cancel')} className='border border-gray-300  px-2 py-1   w-[64px] ml-2'>No</button>
                             </div>
                         </div>
@@ -288,7 +260,7 @@ const Home = () => {
                     ariaHideApp={false}>
                     <div className='w-full rounded-lg shadow-xl z-10 border border-gray-200'>
                         <div className='flex  flex-col bg-white w-full text-white rounded-md'>
-                            <div className='text-white text-xl text-center bg-[rgb(29,70,30)] py-2'>Welcome to Boat</div>
+                            <div className='text-white text-xl text-center bg-[#253e90] py-2'>Welcome to Boat</div>
                             <div className='flex flex-col p-2 text-lg gap-2 font-normal bg-white text-red-800 text-semibold pt-4 mb-[180px]'>
                                 Sign Up to get 50rs <br />
                                 Commission bonus up to 30% <br />
@@ -331,7 +303,7 @@ const Home = () => {
             </div> */}
 
             {/*Navigation bar */}
-            <div className="bg-[rgb(29,70,30)] flex-col  text-black font-semibold relative flex overflow-x-hidden  mx-1 py-2  sm:w-3/5 lg:w-3/5 overflow-y-hidden">
+            <div className="bg-[#253e90] flex-col  text-black font-semibold relative flex overflow-x-hidden  mx-1 py-2  sm:w-3/5 lg:w-3/5 overflow-y-hidden">
                 <div className="flex flex-row justify-around text-xs items-center w-full py-2 px-3">
                     <div className='cursor-pointer mx-2 flex flex-col justify-center items-center'>
                         <img src={recharge} alt="recharge" className='w-10' onClick={() => navigate('/recharge')} />
@@ -360,10 +332,10 @@ const Home = () => {
                         </div>
                     </a>
 
-                    <div onClick={() => navigate('/rewards')} className='cursor-pointer mx-2 flex flex-col justify-center items-center'>
+                    {/* <div onClick={() => navigate('/rewards')} className='cursor-pointer mx-2 flex flex-col justify-center items-center'>
                         <img src={bonus} alt="online" className='w-10' />
                         <div className='text-[12px] text-white opacity-60 mt-1 '>bonus</div>
-                    </div>
+                    </div> */}
                 </div>
 
 
@@ -384,7 +356,7 @@ const Home = () => {
                     </div>
                     <button
                         onClick={() => navigate('/team')}
-                        className='w-full text-lg rounded-md bg-[rgb(62,146,63)] text-white font-semibold text-center py-4'>
+                        className='w-full text-lg rounded-md bg-[#19244b] text-white font-semibold text-center py-4'>
                         View team commissions
                     </button>
                 </div>

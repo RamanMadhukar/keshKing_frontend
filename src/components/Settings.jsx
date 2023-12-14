@@ -1,6 +1,4 @@
 import React from 'react';
-import setting_bank from '../images/setting_bank.png';
-import setting_pwd from '../images/setting_pwd.png';
 import { useNavigate, useLocation } from 'react-router-dom';
 import ReactModal from 'react-modal';
 import { useState } from 'react';
@@ -34,7 +32,7 @@ const Settings = () => {
 
     //[#2e9afe]
     return (
-        <div className='bg-[rgb(29,70,30)] h-screen min-h-screen'>
+        <div className='bg-[#253e90] h-screen min-h-screen'>
             <div>
                 <ReactModal
                     isOpen={logout_popup}
@@ -65,7 +63,7 @@ const Settings = () => {
                     </div>
                 </ReactModal>
             </div>
-            <div className="options text-center  text-recharge-bg flex justify-between  bg-confirm text-md  font-normal mb-2 py-3 items-center px-2">
+            <div className="options text-center  text-recharge-bg flex justify-between  bg-[#253e90] text-md  font-normal mb-2 py-3 items-center px-2">
                 <div className="flex items-center font-bold">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" onClick={() => navigate('/mine')}
@@ -77,14 +75,14 @@ const Settings = () => {
                     <span className='text-sm'>back</span>
                 </div>
                 <div className='flex-grow text-md font-semibold'>Security Settings</div>
-                <div className=" font-bold text-sm text-confirm">Records</div>
+                <div className=" font-bold text-sm text-whitw">Records</div>
             </div>
 
             {/* [#4daaff] */}
             <div className="box mt-6 bg-white mx-3 rounded-lg pb-4">
 
                 <div
-                    onClick={() => navigate('/change_login_password', { state: { withdrawalPassword: loc.state.withdrawalPassword, loginPassword: loc.state.loginPassword } })} className='flex gap-2 items-center text-black  font-semibold text-md p-3 m-1 border-b border-gray-200 cursor-pointer'>
+                    onClick={() => navigate('/change_login_password', { state: { withdrawalPassword: loc.state?.withdrawalPassword, loginPassword: loc.state?.loginPassword } })} className='flex gap-2 items-center text-black  font-semibold text-md p-3 m-1 border-b border-gray-200 cursor-pointer'>
                     {/* <div><img src={setting_pwd} alt="bnk_pwd" width={18} /></div> */}
                     <div className='flex-grow flex justify-between items-center'>
                         <div className='font-normal text-sm'>Modify login password</div>
@@ -123,7 +121,7 @@ const Settings = () => {
                 </div>
 
                 <div onClick={() => setLogout_popup(true)} className="flex flex-row justify-center text-xl
-               w-[80%] mx-auto py-2 mt-5 text-center rounded-full bg-[rgb(62,146,63)]  text-white font-semibold text-opacity-80">
+               w-[80%] mx-auto py-2 mt-5 text-center rounded-full bg-[#19244b]  text-white font-semibold text-opacity-80">
                     <div>Sign out</div>
                 </div>
             </div>

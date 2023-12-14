@@ -1,66 +1,19 @@
 import React, { useLayoutEffect, useState } from 'react';
-import Slider from './Slider';
 import Card from './Card';
 import { useNavigate } from 'react-router-dom';
 import ReactModal from 'react-modal';
-import headset1 from '../images/headset1.png';
-import ubon_home from '../images/ubon_home.png';
-import ubon_user from '../images/ubon_user.png';
-import ubon_group from '../images/ubon_group.png';
-import book_image from '../images/book_image.png';
-import recharge_image from '../images/recharge_image.png';
-import invite_image from '../images/invite_image.png';
 import { useContext } from 'react';
 import { AmountContext } from '../App.js';
-import money_bag from '../images/money_bag.png';
 import axios from 'axios';
 import BASE_URL from '../api_url';
-import amaz_logi from '../images/amaz_logi.png';
-
-import amaz_big1 from '../images/amaz_big1.jpg';
-import amaz_big2 from '../images/amaz_big2.png';
-import amaz_big3 from '../images/amaz_big3.jpg';
-import amaz_big4 from '../images/amaz_big4.jpg';
-import amaz_big5 from '../images/amaz_big5.jpg';
-
-import amaz_short1 from '../images/amaz_short1.jpg';
-import amaz_short2 from '../images/amaz_short2.jpg';
-import amaz_short3 from '../images/amaz_short3.jpg';
-import amaz_short4 from '../images/amaz_short4.jpg';
-import { VolumeUpOutlined } from '@material-ui/icons';
-import rent from '../images/rent.png';
-import financial from '../images/financial.png';
-import user from '../images/user.png';
-import make_money from '../images/make_money.png';
-import dividend from '../images/dividend.png';
-import wind1 from '../images/wind1.jpg';
-import wind2 from '../images/wind2.jpg';
-import wind3 from '../images/wind3.jpg';
-import wind4 from '../images/wind4.jpg';
-
 import home from '../images/dj/normal_home.png';
 import company from '../images/dj/company.png';
 import me from '../images/dj/company.png';
-import project from '../images/dj/Project.png';
 import project_page_image from '../images/dj/product_page_image.png';
-
 import p1 from '../images/dj/i1.jpg';
 import p2 from '../images/dj/i2.jpg';
 import p3 from '../images/dj/i3.jpg';
 import p4 from '../images/dj/i4.jpg';
-// import p1 from '../images/dj/p1.jpg';
-// import p2 from '../images/dj/p2.jpg';
-// import p3 from '../images/dj/p3.jpg';
-// import p4 from '../images/dj/p4.jpg';
-
-// import p1 from '../images/dj/k1.png'
-// import p2 from '../images/dj/k2.png'
-// import p3 from '../images/dj/k3.png'
-// import p4 from '../images/dj/k4.png'
-// import p1 from '../images/dj/k5.png'
-// import p2 from '../images/dj/k6.png'
-// import p3 from '../images/dj/k1.png'
-// import p4 from '../images/dj/k2.png'
 
 
 const customStyles = {
@@ -217,7 +170,7 @@ const ShortPlans = () => {
     }
 
     return (
-        <div className='relative bg-[rgb(29,70,30)] min-h-screen  text-white'>
+        <div className='relative bg-[#253e90] min-h-screen  text-white'>
             {toasterShow ? <div className='w-[50%] absolute z-5 top-[450px] left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
                 <div className='flex gap-2 bg-black opacity-80 text-center justify-center text-white px-2 py-1 rounded-md'>
                     <div>{toasterText}</div>
@@ -251,7 +204,7 @@ const ShortPlans = () => {
                 </ReactModal>
             </div>
 
-            <div className='bg-confirm py-3 shadow-lg px-3 m-3 mt-0 rounded-md flex justify-center items-center'>
+            <div className='bg-[#253e90] py-3 shadow-lg px-3 m-3 mt-0 rounded-md flex justify-center items-center'>
                 <div className='text-white text-sm'>Inoxwind-Products</div>
             </div>
 

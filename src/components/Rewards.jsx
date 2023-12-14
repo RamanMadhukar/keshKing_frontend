@@ -1,13 +1,10 @@
 import axios from 'axios';
-import React, { useEffect, useLayoutEffect } from 'react'
+import React, { useEffect} from 'react'
 import { useState } from 'react';
-import CopyToClipboard from 'react-copy-to-clipboard';
 import { RotatingLines } from 'react-loader-spinner';
 import { useNavigate } from 'react-router-dom';
 import BASE_URL from '../api_url';
-import reward1 from '../images/reward1.svg';
 import envelope from '../images/envelope.jpg';
-import bonus_image from '../images/dj/bonus_image.jpg';
 import bonus_image2 from '../images/dj/bonus_image2.png';
 
 const Rewards = () => {
@@ -66,7 +63,7 @@ const Rewards = () => {
 
 
     return (
-        <div className='md:h-screen bg-[rgb(29,70,30)]  min-h-screen relative bonus_image'>
+        <div className='md:h-screen bg-[#253e90]  min-h-screen relative bonus_image'>
 
             {toasterShow ? <div className='absolute top-1/2 z-30 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-md'>
                 <div className={`flex relative gap-2 ${toasterText.includes('₹') === false ? 'bg-black opacity-100 text-white px-2 py-1' : ''} rounded-md`}>
@@ -226,7 +223,7 @@ const Rewards = () => {
                         <input onChange={(e) => setInput_promo(e.target.value)} type="text"
                             className='flex-grow outline-none bg-white mt-2 placeholder:text-gray-500 font-normal border-[0.5px] border-gray-300 p-3 rounded-lg'
                             placeholder='please enter the red envelope code' />
-                        <button onClick={getReward2} className='bg-confirm w-[40%] mx-auto py-1 mt-2 text-white  rounded-full '>Receive</button>
+                        <button onClick={getReward2} className='bg-[#19244b] w-[40%] mx-auto py-1 mt-2 text-white  rounded-full '>Receive</button>
                     </div>
                 </div>
             </>}

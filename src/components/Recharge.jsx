@@ -40,14 +40,14 @@ const Recharge = () => {
     }
     //[#2e9afe] #4daaff #298ae4 [#2e9afe]
     return (
-        <div className='bg-[rgb(29,70,30)] min-h-screen relative'>
+        <div className='bg-[#253e90] min-h-screen relative'>
             {toasterShow ? <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
                 <div className='flex gap-2 bg-black opacity-80 text-white px-2 w-10/12 py-1 rounded-md'>
                     <div className='text-center w-full'>{toasterText}</div>
                 </div>
             </div> : null}
 
-            <div className="options text-center  text-recharge-bg flex justify-between  bg-confirm text-md  font-normal mb-2 py-3 items-center px-2">
+            <div className="options text-center  text-recharge-bg flex justify-between  bg-[#253e90] text-md  font-normal mb-2 py-3 items-center px-2">
                 <div className="flex items-center font-bold">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" onClick={() => navigate(-1)}
@@ -147,7 +147,7 @@ const Recharge = () => {
                     </div>
 
                     <div className="cnf_recharge w-[90%] mx-auto mt-7">
-                        <button onClick={handleRecharge} className='w-full bg-confirm py-3 font-semibold rounded-full text-white text-lg '>
+                        <button onClick={handleRecharge} className='w-full bg-[#19244b] py-3 font-semibold rounded-full text-white text-lg '>
                             Submit
                         </button>
                     </div>

@@ -1,30 +1,14 @@
 import React from 'react';
-import user_img from '../images/user_img.png';
-import lock_img from '../images/lock_img.png';
 import { useNavigate } from 'react-router-dom';
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 import { useState } from 'react';
 import { useEffect } from 'react';
-import { collection, getDocs, serverTimestamp } from 'firebase/firestore';
-import db from '../firebase/config';
 import { RotatingLines } from 'react-loader-spinner';
-import apache_logo from '../images/apache_logo.png';
 import axios from 'axios';
 import BASE_URL from '../api_url';
-import amaz_logi from '../images/amaz_logi.png';
-import windharvester_logo from '../images/windharvester_logo.png';
-import wind_login from '../images/wind_login.jpg';
-import tuborg_logo from '../images/tuborg_logo.svg';
-import asset0 from '../images/assets5/asset 0.png';
-import asset1 from '../images/assets5/asset 1.png';
-import lenskart_logo from '../images/lenskart_logo.png';
-import jio from '../images/asml/jio.png';
-import jlogo from '../images/asml/jlogo.jpg';
-import boat_logo from '../images/asml/boat/boat_logo.jpg';
 import register_logo from '../images/dj/register_logo.png';
 import mobile from '../images/dj/mobile.png';
 import password from '../images/dj/password.png';
-import info from '../images/dj/info.png';
 
 const Login = () => {
 
@@ -93,7 +77,7 @@ const Login = () => {
     }
 
     return (
-        <div className='relative bg-[rgb(29,70,30)] min-h-screen'>
+        <div className='relative bg-[#253e90] min-h-screen'>
             {toasterShow ? <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
                 <div className='flex gap-2 mx-auto bg-black opacity-70 text-white px-2 py-1 rounded-md'>
                     <div>{toasterText}</div>
@@ -154,7 +138,7 @@ const Login = () => {
 
                 {/*[#0096D5] */}
                 <div className='mt-4 flex flex-col gap-6'>
-                    <button onClick={handleSignIn} className='bg-[rgb(62,146,63)] w-full py-[10px] text-[20px] text-white rounded-md shadow-ceatShadow shadow-red-800
+                    <button onClick={handleSignIn} className='bg-[#19244b] w-full py-[10px] text-[20px] text-white rounded-md shadow-ceatShadow shadow-red-800
                     '>Sign in</button>
                     {/* <button onClick={() => navigate('/register')} className='bg-[rgb(29,70,30)] w-full py-[10px] text-[20px] text-white rounded-full shadow-ceatShadow shadow-red-800
                     '>Register</button> */}

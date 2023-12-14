@@ -44,14 +44,14 @@ const ChangeLoginPassword = () => {
 
     //[#2e9afe]
     return (
-        <div className='bg-[rgb(29,70,30)] min-h-screen sm:h-[700px] md:h-[950px] relative'>
+        <div className='bg-[#253e90] min-h-screen sm:h-[700px] md:h-[950px] relative'>
             {toasterShow ? <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
                 <div className='flex gap-2 bg-black opacity-80 text-white px-2 py-1 rounded-md'>
                     <div>{toasterText}</div>
                 </div>
             </div> : null}
 
-            <div className="options text-center  text-recharge-bg flex justify-between  bg-[rgb(29,70,30)] text-md  font-normal mb-2 py-3 items-center px-2">
+            <div className="options text-center  text-recharge-bg flex justify-between  bg-[#253e90] text-md  font-normal mb-2 py-3 items-center px-2">
                 <div className="flex items-center font-bold">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" onClick={() => navigate('/settings', { state: { withdrawalPassword: loc.state.withdrawalPassword, loginPassword: loc.state.loginPassword } })}
@@ -99,7 +99,7 @@ const ChangeLoginPassword = () => {
 
             <div className='mx-4'>
                 <button onClick={handleReset} 
-                className='bg-[rgb(29,70,30)] text-white text-lg mt-8 mb-20 rounded-full block w-full py-3'>Submit</button>
+                className='bg-[#19244b] text-white text-lg mt-8 mb-20 rounded-full block w-full py-3'>Submit</button>
             </div>
         </div>
     )

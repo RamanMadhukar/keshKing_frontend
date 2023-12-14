@@ -1,51 +1,11 @@
 import React from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useLayoutEffect, useEffect } from 'react';
 import { useState } from 'react';
-import { RotatingLines } from 'react-loader-spinner';
 import axios from 'axios';
 import BASE_URL from '../api_url';
-import setting from '../images/assets/asset 1.png';
-import asset3 from '../images/assets/asset 3.png';
-import asset4 from '../images/assets/asset 4.png';
-import asset5 from '../images/asml/asset 5.png';
-import asset6 from '../images/asml/asset 6.png';
-import asset7 from '../images/asml/asset 7.png';
-import asset8 from '../images/asml/asset 8.png';
-import asset9 from '../images/assets/asset 9.png';
-import asset10 from '../images/assets/asset 10.png';
-import asset11 from '../images/assets/asset 11.png';
-import asset12 from '../images/assets/asset 12.png';
-import asset13 from '../images/assets/asset 13.png';
 import ReactModal from 'react-modal';
-import tuborg_logo from '../images/tuborg_logo.svg';
-import asset35 from '../images/assets3/asset 5.avif';
-import asset36 from '../images/assets3/asset 6.avif';
-import asset37 from '../images/assets3/asset 7.avif';
-import asset38 from '../images/assets3/asset 8.avif';
-
-import asset41 from '../images/assets4/asset 1.png'
-import asset42 from '../images/assets4/asset 2.png'
-import asset44 from '../images/assets4/asset 4.png'
-import asset45 from '../images/assets4/asset 5.png'
-import lenskart_logo from '../images/lenskart_logo.png';
-
 import DateDifference from '../utility/DateDifference.js';
-
-import my1 from '../images/asml/my1.png';
-import my2 from '../images/asml/my2.png';
-import my3 from '../images/asml/my3.png';
-import my4 from '../images/asml/my4.png';
-import my5 from '../images/asml/my5.png';
-import jio from '../images/asml/jio.png';
-import jlogo from '../images/asml/jlogo.jpg';
-import boat_logo from '../images/asml/boat/boat_logo.jpg';
-import account_record from '../images/asml/account_record.png';
-import personal_information from '../images/asml/personal_information.png';
-import ceat_company from '../images/asml/ceat_company.png';
-import app_download from '../images/asml/app_download.png';
-import plan_details from '../images/asml/plan_details.png';
-
 import setting_top from '../images/dj/setting.png';
 import projects_me from '../images/dj/projects_me.png';
 import bind_bank_account from '../images/dj/bind_bank_account.png';
@@ -249,7 +209,7 @@ const Mine = () => {
 
   if (loading) {
     return (
-      <div className='relative bg-confirm min-h-screen'>
+      <div className='relative bg-[#253e90] min-h-screen'>
       {toasterShow
         ?
         <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
@@ -290,7 +250,7 @@ const Mine = () => {
       </div>
 
 
-      <div className="flex flex-col bg-confirm gap-1 w-full">
+      <div className="flex flex-col bg-[#253e90] gap-1 w-full">
         <div className='flex items-center justify-end pr-2 pt-2' onClick={() => navigate('/settings')}>
           <div><img src={setting_top} alt="setting_image" className='w-7 h-7' /></div>
         </div>
@@ -570,7 +530,7 @@ const Mine = () => {
   }
 
   return (
-    <div className='relative h-screen bg-confirm'>
+    <div className='relative h-screen bg-[#253e90]'>
       {toasterShow
         ?
         <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
@@ -611,7 +571,7 @@ const Mine = () => {
       </div>
 
 
-      <div className="flex flex-col bg-confirm gap-1 w-full">
+      <div className="flex flex-col bg-[#253e90] gap-1 w-full">
         <div className='flex items-center justify-end pr-2 pt-2' onClick={() => navigate('/settings', { state: { withdrawalPassword: originalwpwd, loginPassword: originalpwd } })}>
           <div><img src={setting_top} alt="setting_image" className='w-7 h-7' /></div>
         </div>

@@ -1,25 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
-import referralCodeGenerator from 'referral-code-generator'
-import db from '../firebase/config.js';
-import { setDoc, doc, updateDoc, query, collection, where, getDocs, getDoc, arrayUnion, increment } from "firebase/firestore";
+import { getAuth} from 'firebase/auth';
 import { useContext } from 'react';
 import { AmountContext } from '../App';
-import close_eye from '../images/close_eye.png';
 import { RotatingLines } from 'react-loader-spinner';
-import apache_logo from '../images/apache_logo.png';
 import BASE_URL from '../api_url.js';
 import axios from 'axios';
-import amaz_logi from '../images/amaz_logi.png';
-import { PhoneAndroid, VerifiedUserOutlined, LockOutlined } from '@material-ui/icons';
-import { Typography } from '@material-ui/core';
-import wind_login from '../images/wind_login.jpg'
-import lenskart_logo from '../images/lenskart_logo.png';
-import tuborg_logo from '../images/tuborg_logo.svg';
-import jio from '../images/asml/jio.png';
-import jlogo from '../images/asml/jlogo.jpg';
-import boat_logo from '../images/asml/boat/boat_logo.jpg';
 import register_logo from '../images/dj/register_logo.jpg';
 import mobile from '../images/dj/mobile.png';
 import password from '../images/dj/password.png';
@@ -134,7 +120,7 @@ const Register = () => {
     }
     //[#0096D5]
     return (
-        <div className='relative bg-[rgb(29,70,30)] min-h-screen'>
+        <div className='relative bg-[#253e90] min-h-screen'>
             {toasterShow ? <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
                 <div className='flex gap-2 items-center justify-center bg-black py-[10px] px-4  rounded-[4px] opacity-80 text-white '>
                     <div>{toasterText}</div>
@@ -146,7 +132,7 @@ const Register = () => {
                 </div> : null}
                 <div className='text-[16px]'>{text}</div>
             </div> : null}
-            <div className='flex items-center text-center bg-[rgb(29,70,30)] font-sans text-white pt-2 text-lg pb-2'>
+            <div className='flex items-center text-center bg-[#253e90] font-sans text-white pt-2 text-lg pb-2'>
                 <div className="flex flex-row items-center absolute left-2" onClick={() => navigate('/login')}>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
@@ -222,7 +208,7 @@ const Register = () => {
                     </div>
                 </div>
 
-                <button onClick={handleRegister} className='bg-[rgb(62,146,63)] text-white text-center py-[10px]  rounded-md text-md mt-5'>Sign Up</button>
+                <button onClick={handleRegister} className='bg-[#19244b] text-white text-center py-[10px]  rounded-md text-md mt-5'>Sign Up</button>
                 {/* <div onClick={() => navigate('/login')} className='cursor-pointer text-center text-red-800  p-[7px] mb-2 bg-white  rounded-full border border-gray-200'>
                     Already have an account, log in
                 </div> */}

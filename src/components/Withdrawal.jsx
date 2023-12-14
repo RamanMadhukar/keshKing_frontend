@@ -193,7 +193,7 @@ const Withdrawal = () => {
     }
     //[#2e9afe]
     return (
-        <div className='bg-[rgb(29,70,30)] min-h-screen flex flex-col  sm:h-[1000px] md:h-[950px] relative'>
+        <div className='bg-[#253e90] min-h-screen flex flex-col  sm:h-[1000px] md:h-[950px] relative'>
             {toasterShow ? <div className='absolute top-1/2 w-full left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
                 <div className='flex gap-2 bg-black opacity-80 text-white mx-auto w-4/5 px-2 py-1 rounded-md'>
                     <div className='text-center w-full'>{toasterText}</div>
@@ -209,13 +209,13 @@ const Withdrawal = () => {
                 >
                     <h1 className='text-gray-600 mb-3 text-xl'>Are you Sure?</h1>
                     <div>
-                        <button onClick={() => handleWithdrawal()} className='bg-[rgb(29,70,30)] text-white px-2 py-1 rounded-lg shadow-md w-[64px]'>Yes</button>
-                        <button onClick={() => setIsOpen(false)} className='bg-[rgb(29,70,30)] text-white px-2 py-1 rounded-lg shadow-md w-[64px] ml-2'>cancel</button>
+                        <button onClick={() => handleWithdrawal()} className='bg-[#19244b] text-white px-2 py-1 rounded-lg shadow-md w-[64px]'>Yes</button>
+                        <button onClick={() => setIsOpen(false)} className='bg-[#19244b] text-white px-2 py-1 rounded-lg shadow-md w-[64px] ml-2'>cancel</button>
                     </div>
                 </ReactModal>
             </div>
 
-            <div className="options text-center  text-recharge-bg flex justify-between  bg-confirm text-md  font-normal mb-2 py-3 items-center px-2">
+            <div className="options text-center  text-recharge-bg flex justify-between  bg-[#253e90] text-md  font-normal mb-2 py-3 items-center px-2">
                 <div className="flex items-center font-bold">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" onClick={() => navigate(-1)}
@@ -260,7 +260,7 @@ const Withdrawal = () => {
 
                 <div className='flex items-center justify-start gap-2 mt-4 mb-1'>
                     <div className="balance text-black font-bold text-[16px]">Balance: {Math.floor(balance)}</div>
-                    <div onClick={handleWithdrawalAll} className="withdraw bg-confirm font-medium rounded-sm
+                    <div onClick={handleWithdrawalAll} className="withdraw bg-[#253e90] font-medium rounded-sm
                     text-white text-[10px] py-1 cursor-pointer text-center px-[4px]">All</div>
                 </div>
 
@@ -311,16 +311,16 @@ const Withdrawal = () => {
 
                 {
                     isBetween() ?
-                        <button onClick={handleLastButton} className='bg-confirm rounded-full text-white text-lg mt-3 mx-auto  
+                        <button onClick={handleLastButton} className='bg-[#19244b] rounded-full text-white text-lg mt-3 mx-auto  
                         mb-2   block w-[95%] py-2 shadow-slate-400'>Submit</button>
                         :
-                        <button onClick={() => toaster('You can withdraw only between 09:30 AM to 03:00 PM')} className='bg-confirm rounded-full 
+                        <button onClick={() => toaster('You can withdraw only between 09:30 AM to 03:00 PM')} className='bg-[#19244b] rounded-full 
                         text-white text-lg mt-3 mx-auto  mb-2  
                          block w-[95%] py-2 shadow-slate-400'>Submit</button>
                 }
             </div>
         
-            <div className="part1 bg-[rgb(29,70,30)]  rounded-lg mx-3 flex flex-col gap-1 text-[14px]">
+            <div className="part1 bg-[#19244b]  rounded-lg mx-3 flex flex-col gap-1 text-[14px]">
                 <div className='text-gray-500 font-medium'><br />
                     1: Valid members can apply for withdrawal. The number of withdrawals is unlimited. The minimum withdrawal amount is 200rs.<br />
                     2: IFSC should be 11 characters and 5th character should be 0. If you fill in wrong bank information, your withdrawal will fail.<br />

@@ -51,13 +51,13 @@ const ForgotPassword = () => {
     }
     //[#0096D5] [#0096D5] [#0096D5]
     return (
-        <div className='bg-[rgb(29,70,30)] min-h-screen relative'>
+        <div className='bg-[#253e90] min-h-screen relative'>
             {toasterShow ? <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
                 <div className='flex gap-2 bg-black opacity-100 text-white px-2 py-1 rounded-md text-center'>
                     <div>{toasterText}</div>
                 </div>
             </div> : null}
-            <div className="options text-center  text-recharge-bg flex justify-between  bg-confirm text-md  font-normal mb-2 py-3 items-center px-2">
+            <div className="options text-center  text-recharge-bg flex justify-between  bg-[#253e90] text-md  font-normal mb-2 py-3 items-center px-2">
                 <div className="flex items-center font-bold">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" onClick={() => navigate('/register')}
@@ -72,7 +72,7 @@ const ForgotPassword = () => {
                 <div className=" font-bold text-sm text-confirm">Records</div>
             </div>
             {/* [#d3d6fe] */}
-            <div className="box mb-20 gap-2 m-auto bg-[rgb(29,70,30)] rounded-md mt-6 border-solid lg:w-3/5 w-[86%]  p-4 w-50% flex flex-col">
+            <div className="box mb-20 gap-2 m-auto bg-[#253e90] rounded-md mt-6 border-solid lg:w-3/5 w-[86%]  p-4 w-50% flex flex-col">
                 <div className="no_phone mb-3 flex items-center bg-white border-2 border-gray-100 rounded-lg ">
                     <input onChange={(e) => { setMobno(e.target.value); setOTPfield(String(Math.floor(100000 + Math.random() * 900000))) }} 
                     type="number" className='p-3 w-full outline-none rounded-full' placeholder='Phone number' name="phoneno" id="phoneno" />
@@ -81,7 +81,7 @@ const ForgotPassword = () => {
 
 
                 <input type="password" className='p-3 mb-3 outline-none border-2 border-gray-100 rounded-lg' onChange={(e) => setOtp(e.target.value)} placeholder='Please enter the OTP' name="passowrd" id="pass" />
-                <button onClick={handleReset} disabled={!(otpfield == otp && otp.length > 0 && otpfield.length > 0)} className={`${(otpfield == otp && otp.length > 0 && otpfield.length > 0) ? 'bg-confirm' : 'bg-gray-500 cursor-not-allowed'} text-white pt-2 pb-2 rounded-full text-lg`}>Confirm</button>
+                <button onClick={handleReset} disabled={!(otpfield == otp && otp.length > 0 && otpfield.length > 0)} className={`${(otpfield == otp && otp.length > 0 && otpfield.length > 0) ? 'bg-[#19244b]' : 'bg-gray-500 cursor-not-allowed'} text-white pt-2 pb-2 rounded-full text-lg`}>Confirm</button>
                 {/* <div onClick={() => { navigate('/login') }} className='cursor-pointer text-center bg-white text-black mt-2 p-2 mb-2 border-2 border-gray-100 rounded-full'>
                     Already have an account, log in
                 </div> */}

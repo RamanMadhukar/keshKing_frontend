@@ -48,8 +48,8 @@ const Invite = () => {
 
     if (loading || userDetails === null) {
         return (
-            <div className=' bg-[rgb(29,70,30)] min-h-screen flex flex-col text-white font-light  relative'>
-                <div className="options text-center  text-recharge-bg flex justify-between  bg-confirm text-md  font-normal mb-2 py-3 items-center px-2">
+            <div className=' bg-[#253e90] min-h-screen flex flex-col text-white font-light  relative'>
+                <div className="options text-center  text-recharge-bg flex justify-between  bg-[#253e90] text-md  font-normal mb-2 py-3 items-center px-2">
                     <div className="flex items-center font-bold">
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" onClick={() => navigate(-1)}
@@ -83,13 +83,13 @@ const Invite = () => {
     }
     //[#2e9afe]
     return (
-        <div className=' bg-[rgb(29,70,30)]  flex flex-col text-white font-light relative'>
+        <div className=' bg-[#253e90]  flex flex-col text-white font-light relative'>
             {toasterShow ? <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
                 <div className='flex gap-2 bg-black opacity-80 text-white px-2 py-1 rounded-md'>
                     <div>{toasterText}</div>
                 </div>
             </div> : null}
-            <div className="options text-center  text-recharge-bg flex justify-between  bg-confirm text-md  font-normal mb-2 py-3 items-center px-2">
+            <div className="options text-center  text-recharge-bg flex justify-between  bg-[#253e90] text-md  font-normal mb-2 py-3 items-center px-2">
                 <div className="flex items-center font-bold">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" onClick={() => navigate(-1)}
@@ -101,7 +101,7 @@ const Invite = () => {
                     <span className='text-sm'>back</span>
                 </div>
                 <div className='flex-grow text-md font-semibold'>Invitation</div>
-                <div className=" font-bold text-sm text-confirm">Records</div>
+                <div className=" font-bold text-sm text-white">Records</div>
             </div>
 
             <div className="flex flex-col py-5 text-black  justify-center items-center gap-2 bg-white mx-2 rounded-md text-sm mt-4">
@@ -116,7 +116,7 @@ const Invite = () => {
                         {`${origin}/register/invite_code/${userDetails.user_invite}`}
                     </div>
                     <CopyToClipboard text={`${origin}/register/invite_code/${userDetails.user_invite}`} onCopy={() => toaster('copy succeded')}>
-                        <span className='w-[80%] text-lg mt-4 py-2 rounded-full font-semibold text-center bg-confirm text-white p-2'>copy invitation link</span>
+                        <span className='w-[80%] text-lg mt-4 py-2 rounded-full font-semibold text-center bg-[#19244b] text-white p-2'>copy invitation link</span>
                     </CopyToClipboard>
                 </div>
             </div>

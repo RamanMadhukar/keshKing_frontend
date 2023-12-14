@@ -161,8 +161,8 @@ const RechargeWindow = () => {
                 <img src={img6} alt="img1" />
             </div>
 
-            <div className="fixed bottom-0 border-t border-confirm w-full bg-[#f7f7fa] ">
-                <button onClick={handleRecharge} className='bg-confirm py-2 text-white text-lg w-full rounded-md my-5'>Submit Ref. Number</button>
+            <div className="fixed bottom-0 border-t border-[#19244b] w-full bg-[#f7f7fa] ">
+                <button onClick={handleRecharge} className='bg-[#19244b] py-2 text-white text-lg w-full rounded-md my-5'>Submit Ref. Number</button>
             </div>
 
         </div>

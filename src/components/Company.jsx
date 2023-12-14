@@ -1,28 +1,14 @@
 import React from 'react';
-// import hp_cpy_image from '../images/hp_cpy_image.jpg';
 import { useNavigate } from 'react-router-dom';
-import waltonbd_logo from '../images/waltonbd_logo.jpg'
-import tuborg_company from '../images/tuborg_company.jpg';
-import asset43 from '../images/assets4/asset 0.jpeg'
-import lenskart_logo from '../images/lenskart_logo.png';
-import jio from '../images/asml/jio.png'
-import company from '../images/asml/company.jpg'
-import company2 from '../images/asml/company2.jpg'
-import company3 from '../images/asml/company3.jpg'
-import company4 from '../images/asml/company4.jpg'
-
-import ceat_company1 from '../images/asml/ceat_company1.jpg';
-import ceat_company2 from '../images/asml/ceat_company2.jpg';
-import ceat_company3 from '../images/asml/ceat_company3.jpg';
 import company_image from '../images/dj/company.jpg';
 
 
 const Company = () => {
     const navigate = useNavigate();
     return (
-        <div className=' w-full min-h-screen bg-[rgb(29,70,30)] text-white '>
+        <div className=' w-full min-h-screen bg-[#253e90] text-white '>
             {/* [#2e9afe] */}
-            <div className="options text-center  text-recharge-bg flex justify-between  bg-[rgb(29,70,30)] text-md  font-normal mb-2 py-3 items-center px-2">
+            <div className="options text-center  text-recharge-bg flex justify-between  bg-[#253e90] text-md  font-normal mb-2 py-3 items-center px-2">
                 <div className="flex items-center font-bold">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" onClick={() => navigate('/home')}
@@ -34,7 +20,7 @@ const Company = () => {
                     <span className='text-sm'>back</span>
                 </div>
                 <div className='flex-grow text-md font-semibold'>Company Profile</div>
-                <div className=" font-bold text-sm text-confirm">Records</div>
+                <div className=" font-bold text-sm text-white">Records</div>
             </div>
 
 
