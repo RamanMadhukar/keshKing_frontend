@@ -132,7 +132,7 @@ const Record = () => {
                                     <div className='text-white'><span className='text-white font-medium'>Withdrawal - </span>{new Intl.NumberFormat().format(element.withdrawalAmount)}</div>
                                 </div>
                                 <div>
-                                    <div className='bg-[white] px-2 py-1 font-semibold rounded-md text-sm text-white'>{nameMapper[String(element.status)]}</div>
+                                    <div className='bg-[#253e90] px-2 py-1 font-semibold rounded-md text-sm text-white'>{nameMapper[String(element.status)]}</div>
                                 </div>
 
                             </div>
