@@ -6,7 +6,7 @@ import { AmountContext } from '../App';
 import { RotatingLines } from 'react-loader-spinner';
 import BASE_URL from '../api_url.js';
 import axios from 'axios';
-import register_logo from '../images/dj/register_logo.png';
+import register_logo from '../images/dj/register_logo.jpg';
 import mobile from '../images/dj/mobile.png';
 import password from '../images/dj/password.png';
 import info from '../images/dj/info.png';

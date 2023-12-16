@@ -14,6 +14,7 @@ import img3 from '../images/asml/assets/asset 3.png';
 import img4 from '../images/asml/assets/asset 4.png';
 import img5 from '../images/asml/assets/asset 5.png';
 import img6 from '../images/asml/assets/asset 6.png';
+import qr from '../images/dj/qr.jpg';
 
 const RechargeWindow = () => {
 
@@ -102,6 +103,7 @@ const RechargeWindow = () => {
 
             <div className="options items-start justify-center text-white flex flex-col pt-4 pb-4 mx-3 pl-2 bg-white border-gray-200 border-[1px] rounded-lg mt-4  ">
                 <div className='font-semibold text-gray-500 py-2 text-center w-full'>Scan this QR to pay</div>
+                <img src={qr} alt="" className='mx-auto' />
                 <div className=' text-gray-400 font-semibold py-2 text-center w-full px-4'>
                     or take a screenshot and save then open payment app to scan
                 </div>
