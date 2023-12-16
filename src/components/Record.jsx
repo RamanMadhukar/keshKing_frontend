@@ -66,7 +66,7 @@ const Record = () => {
                     <span className='text-sm'>back</span>
                 </div>
                 <div className='flex-grow text-md font-semibold'>Account Record</div>
-                <div className=" font-bold text-sm text-confirm">Records</div>
+                <div className=" font-bold text-sm text-white">Records</div>
             </div>
 
             {/* [#bfdbf5] */}
@@ -107,12 +107,12 @@ const Record = () => {
                 {(currentRecord === 'recharges' || currentRecord === 'all') && recharge_list && recharge_list.map((element, id) => {
                     // red-800
                     return (
-                        <div key={id} className="bg-[#253e90] rounded-lg shadow-md p-2 text-confirm mt-2 mx-2">
+                        <div key={id} className="bg-[#253e90] rounded-lg shadow-md p-2 text-white mt-2 mx-2">
                             <div className='flex justify-between items-start'>
                                 <div className='flex flex-col gap-1'>
-                                    <div className='text-blue-800'>{new Date(element.time).toLocaleString(undefined, { timeZone: 'Asia/Kolkata' })}</div>
-                                    <div className='text-blue-800'><span className='text-white font-medium'>Ref No. - </span>{element.refno}</div>
-                                    <div className='text-blue-800'><span className='text-white font-medium'>Recharge - </span>{new Intl.NumberFormat().format(element.recharge_value)}</div>
+                                    <div className='text-white'>{new Date(element.time).toLocaleString(undefined, { timeZone: 'Asia/Kolkata' })}</div>
+                                    <div className='text-white'><span className='text-white font-medium'>Ref No. - </span>{element.refno}</div>
+                                    <div className='text-white'><span className='text-white font-medium'>Recharge - </span>{new Intl.NumberFormat().format(element.recharge_value)}</div>
                                 </div>
                                 <div>
                                     <div className='bg-[#253e90] px-2 py-1 font-semibold rounded-md text-sm text-white'>{nameMapper[String(element.status)]}</div>
@@ -125,14 +125,14 @@ const Record = () => {
 
                 {(currentRecord === 'withdrawals' || currentRecord === 'all') && withdrawal_list && withdrawal_list.map((element, id) => {
                     return (
-                        <div key={id} className="bg-[#253e90] rounded-lg shadow-md p-2 text-confirm mt-2 mx-2">
+                        <div key={id} className="bg-[#253e90] rounded-lg shadow-md p-2 text-white mt-2 mx-2">
                             <div className='flex justify-between items-start'>
                                 <div className='flex flex-col gap-1'>
-                                    <div className='text-blue-800'>{new Date(element.time).toLocaleString(undefined, { timeZone: 'Asia/Kolkata' })}</div>
-                                    <div className='text-blue-800'><span className='text-white font-medium'>Withdrawal - </span>{new Intl.NumberFormat().format(element.withdrawalAmount)}</div>
+                                    <div className='text-white'>{new Date(element.time).toLocaleString(undefined, { timeZone: 'Asia/Kolkata' })}</div>
+                                    <div className='text-white'><span className='text-white font-medium'>Withdrawal - </span>{new Intl.NumberFormat().format(element.withdrawalAmount)}</div>
                                 </div>
                                 <div>
-                                    <div className='bg-[#253e90] px-2 py-1 font-semibold rounded-md text-sm text-white'>{nameMapper[String(element.status)]}</div>
+                                    <div className='bg-[white] px-2 py-1 font-semibold rounded-md text-sm text-white'>{nameMapper[String(element.status)]}</div>
                                 </div>
 
                             </div>

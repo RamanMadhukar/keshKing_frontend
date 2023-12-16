@@ -83,7 +83,7 @@ const Team = () => {
             <span className='text-sm'>back</span>
           </div>
           <div className='flex-grow text-md font-semibold'>My Teams</div>
-          <div className=" font-bold text-sm text-confirm">Records</div>
+          <div className=" font-bold text-sm text-white">Records</div>
         </div>
 
 
@@ -144,7 +144,7 @@ const Team = () => {
           <span className='text-sm'>back</span>
         </div>
         <div className='flex-grow text-md font-semibold'>My Teams</div>
-        <div className=" font-bold text-sm text-confirm">Records</div>
+        <div className=" font-bold text-sm text-white">Records</div>
       </div>
 
       {/* <div className="flex flex-row justify-between items-center p-2 border-b-[0.5px] border-gray-200" >

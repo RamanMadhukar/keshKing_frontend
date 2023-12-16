@@ -61,7 +61,7 @@ const Invite = () => {
                         <span className='text-sm'>back</span>
                     </div>
                     <div className='flex-grow text-md font-semibold'>Invitation</div>
-                    <div className=" font-bold text-sm text-confirm">Records</div>
+                    <div className=" font-bold text-sm text-white">Records</div>
                 </div>
 
                 <div className="flex flex-col py-5 text-black  justify-center items-center gap-2 bg-white mx-2 rounded-md text-sm mt-4">

@@ -63,7 +63,7 @@ const ChangeLoginPassword = () => {
                     <span className='text-sm'>back</span>
                 </div>
                 <div className='flex-grow text-md font-semibold'>Retrieve Password</div>
-                <div className=" font-bold text-sm text-confirm">Records</div>
+                <div className=" font-bold text-sm text-white">Records</div>
             </div>
 
             {/* <div className='flex gap-2 items-center  text-md  p-1 text-sm bg-recharge-bg text-gray-500 font-semibold m-1 shadow-sm shadow-gray-50  '>

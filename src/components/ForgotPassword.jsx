@@ -69,14 +69,14 @@ const ForgotPassword = () => {
                     <span className='text-sm'>back</span>
                 </div>
                 <div className='flex-grow text-md font-semibold'>Forgot Passoword</div>
-                <div className=" font-bold text-sm text-confirm">Records</div>
+                <div className=" font-bold text-sm text-white">Records</div>
             </div>
             {/* [#d3d6fe] */}
             <div className="box mb-20 gap-2 m-auto bg-[#253e90] rounded-md mt-6 border-solid lg:w-3/5 w-[86%]  p-4 w-50% flex flex-col">
                 <div className="no_phone mb-3 flex items-center bg-white border-2 border-gray-100 rounded-lg ">
                     <input onChange={(e) => { setMobno(e.target.value); setOTPfield(String(Math.floor(100000 + Math.random() * 900000))) }} 
                     type="number" className='p-3 w-full outline-none rounded-full' placeholder='Phone number' name="phoneno" id="phoneno" />
-                    <div onClick={handleMessage} className='opt w-20 bg-white mr-1 text-xs cursor-pointer py-2 rounded-md text-confirm border-confirm border-[0.5px] text-center'>Send OTP</div>
+                    <div onClick={handleMessage} className='opt w-20 bg-white mr-1 text-xs cursor-pointer py-2 rounded-md text-white border-white border-[0.5px] text-center'>Send OTP</div>
                 </div>
 
 

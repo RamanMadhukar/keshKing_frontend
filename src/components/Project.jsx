@@ -156,7 +156,7 @@ const Project = () => {
                     <span className='text-sm'>back</span>
                 </div>
                 <div className='flex-grow text-md font-semibold'>My Projects</div>
-                <div className=" font-bold text-sm text-confirm">Records</div>
+                <div className=" font-bold text-sm text-white">Records</div>
             </div>
 
 
