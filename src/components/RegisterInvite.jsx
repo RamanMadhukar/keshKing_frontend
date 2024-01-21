@@ -6,7 +6,7 @@ import { AmountContext } from '../App';
 import { RotatingLines } from 'react-loader-spinner';
 import BASE_URL from '../api_url.js';
 import axios from 'axios';
-import register_logo from '../images/dj/register_logo.jpg';
+import register_logo from '../images/dj/register_logo.png';
 import mobile from '../images/dj/mobile.png';
 import password from '../images/dj/password.png';
 import info from '../images/dj/info.png';
@@ -121,7 +121,7 @@ const Register = () => {
     }
     //[#0096D5]
     return (
-        <div className='relative bg-[#253e90] min-h-screen'>
+        <div className='relative bg-[#0373bd] min-h-screen'>
             {toasterShow ? <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
                 <div className='flex gap-2 items-center justify-center bg-black py-[10px] px-4  rounded-[4px] opacity-80 text-white '>
                     <div>{toasterText}</div>
@@ -133,7 +133,7 @@ const Register = () => {
                 </div> : null}
                 <div className='text-[16px]'>{text}</div>
             </div> : null}
-            <div className='flex items-center text-center bg-[#253e90] font-sans text-white pt-2 text-lg pb-2'>
+            <div className='flex items-center text-center bg-[#0373bd] font-sans text-white pt-2 text-lg pb-2'>
                 <div className="flex flex-row items-center absolute left-2" onClick={() => navigate('/login')}>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />

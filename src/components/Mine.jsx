@@ -17,7 +17,7 @@ import home from '../images/dj/normal_home.png';
 import company from '../images/dj/company.png';
 import me from '../images/dj/me_page_image.png';
 import project from '../images/dj/Project.png';
-import register_logo from '../images/dj/register_logo.jpg';
+import register_logo from '../images/dj/register_logo.png';
 
 const customStyles2 = {
   content: {
@@ -209,7 +209,7 @@ const Mine = () => {
 
   if (loading) {
     return (
-      <div className='relative bg-[#253e90] min-h-screen'>
+      <div className='relative bg-[#0373bd] min-h-screen'>
       {toasterShow
         ?
         <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
@@ -250,7 +250,7 @@ const Mine = () => {
       </div>
 
 
-      <div className="flex flex-col bg-[#253e90] gap-1 w-full">
+      <div className="flex flex-col bg-[#0373bd] gap-1 w-full">
         <div className='flex items-center justify-end pr-2 pt-2' onClick={() => navigate('/settings')}>
           <div><img src={setting_top} alt="setting_image" className='w-7 h-7' /></div>
         </div>
@@ -530,7 +530,7 @@ const Mine = () => {
   }
 
   return (
-    <div className='relative h-screen bg-[#253e90]'>
+    <div className='relative h-screen bg-[#0373bd]'>
       {toasterShow
         ?
         <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
@@ -571,7 +571,7 @@ const Mine = () => {
       </div>
 
 
-      <div className="flex flex-col bg-[#253e90] gap-1 w-full">
+      <div className="flex flex-col bg-[#0373bd] gap-1 w-full">
         <div className='flex items-center justify-end pr-2 pt-2' onClick={() => navigate('/settings', { state: { withdrawalPassword: originalwpwd, loginPassword: originalpwd } })}>
           <div><img src={setting_top} alt="setting_image" className='w-7 h-7' /></div>
         </div>

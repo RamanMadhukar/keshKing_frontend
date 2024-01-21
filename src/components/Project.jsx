@@ -137,14 +137,14 @@ const Project = () => {
 
     //[#2e9afe]
     return (
-        <div className='md:h-screen overflow-y-scroll xs:h-[700px] bg-[#253e90] min-h-screen relative w-full'>
+        <div className='md:h-screen overflow-y-scroll xs:h-[700px] bg-[#0373bd] min-h-screen relative w-full'>
             {toasterShow ? <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
                 <div className='flex gap-2 bg-black opacity-80 text-white mx-auto w-10/12 px-2 py-1 rounded-md'>
                     <div className='text-center w-full'>{toasterText}</div>
                 </div>
             </div> : null}
 
-            <div className="options text-center  text-recharge-bg flex justify-between  bg-[#253e90] text-md  font-normal mb-2 py-3 items-center px-2">
+            <div className="options text-center  text-recharge-bg flex justify-between  bg-[#0373bd] text-md  font-normal mb-2 py-3 items-center px-2">
                 <div className="flex items-center font-bold">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" onClick={() => navigate(-1)}
@@ -174,7 +174,7 @@ const Project = () => {
                             if (element.plan_daily_earning * element.plan_cycle !== DateDifference(new Date(element.date_purchased), new Date(element.date_till_rewarded)) * element.quantity * element.plan_daily_earning) {
                                 return (
                                     <div key={index} className='mx-auto w-[90%] mt-4 border-x-2 border-white border-b-2  rounded-lg '>
-                                        <div className="text-lg p-3 text-white font-semibold bg-[#253e90] rounded-t-lg">Plan Details</div>
+                                        <div className="text-lg p-3 text-white font-semibold bg-[#0373bd] rounded-t-lg">Plan Details</div>
                                         <div className='p-3 text-white'>
                                             <div className='mb-1'>Plan Name: {element.plan_name}</div>
                                             <div className='mb-1'>Start Date: {element.date_purchased}</div>
@@ -198,7 +198,7 @@ const Project = () => {
                             if (element.plan_daily_earning * element.plan_cycle === DateDifference(new Date(element.date_purchased), new Date(element.date_till_rewarded)) * element.quantity * element.plan_daily_earning) {
                                 return (
                                     <div key={index} className='mx-auto w-[90%] mt-4 border-x-2 border-white border-b-2  rounded-lg '>
-                                        <div className="text-lg p-3 text-white font-semibold bg-[#253e90] rounded-t-lg">Plan Details</div>
+                                        <div className="text-lg p-3 text-white font-semibold bg-[#0373bd] rounded-t-lg">Plan Details</div>
                                         <div className='p-3'>
                                             <div className='mb-1'>Plan Name: {element.plan_name}</div>
                                             <div className='mb-1'>Start Date: {element.date_purchased}</div>

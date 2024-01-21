@@ -1,5 +1,5 @@
-const BASE_URL = "https://whale-app-ytlex.ondigitalocean.app/api";
-// const BASE_URL = "http://localhost:8000/api";
+// const BASE_URL = "https://whale-app-ytlex.ondigitalocean.app/api";
+const BASE_URL = "http://localhost:8000/api";
 
 export default BASE_URL;
 

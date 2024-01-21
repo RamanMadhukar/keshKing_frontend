@@ -52,9 +52,9 @@ const Record = () => {
     }, []);
     //[#2e9afe]
     return (
-        <div className=' bg-[#253e90] min-h-screen w-full pb-3 sm:h-[1000px] md:h-screen h-screen'>
+        <div className=' bg-[#0373bd] min-h-screen w-full pb-3 sm:h-[1000px] md:h-screen h-screen'>
 
-            <div className="options text-center  text-recharge-bg flex justify-between  bg-[#253e90] text-md  font-normal mb-2 py-3 items-center px-2">
+            <div className="options text-center  text-recharge-bg flex justify-between  bg-[#0373bd] text-md  font-normal mb-2 py-3 items-center px-2">
                 <div className="flex items-center font-bold">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" onClick={() => navigate('/mine')}
@@ -81,10 +81,10 @@ const Record = () => {
                     <input type="date" className="bg-white border-2 border-gray-300 text-gray-900 sm:text-xs rounded-full focus:ring-slate-500 focus:border-slate-500 block w-full  px-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500" placeholder="Select date" />
                 </div>
                 
-                <button className='bg-[#253e90] shadow-lg w-20 text-center  ml-3 text-white rounded-full py-1'>Search</button>
+                <button className='bg-[#0373bd] shadow-lg w-20 text-center  ml-3 text-white rounded-full py-1'>Search</button>
             </div> */}
             {/* [#bce4ed] */}
-            <div className='records w-full flex  bg-[#253e90] font-normal items-center rounded-lg mt-3'>
+            <div className='records w-full flex  bg-[#0373bd] font-normal items-center rounded-lg mt-3'>
                 <div className='w-full flex mx-3'>
                     <div className={`h-[25px] border-[0.5px] border-gray-200 border-opacity-80 text-sm cursor-pointer flex items-center justify-center w-1/3 text-center ${currentRecord === 'all' ? 'bg-[#19244b] text-white' : 'bg-white text-confirm'}`} onClick={() => setCurrentRecord('all')}>All Types</div>
                     <div className={`h-[25px] border-[0.5px] border-gray-200 border-opacity-80 text-sm cursor-pointer flex items-center justify-center w-1/3 text-center ${currentRecord === 'withdrawals' ? 'bg-[#19244b] text-white' : 'bg-white text-confirm'}`} onClick={() => setCurrentRecord('withdrawals')}>Withdrawls</div>
@@ -107,7 +107,7 @@ const Record = () => {
                 {(currentRecord === 'recharges' || currentRecord === 'all') && recharge_list && recharge_list.map((element, id) => {
                     // red-800
                     return (
-                        <div key={id} className="bg-[#253e90] rounded-lg shadow-md p-2 text-white mt-2 mx-2">
+                        <div key={id} className="bg-[#0373bd] rounded-lg shadow-md p-2 text-white mt-2 mx-2">
                             <div className='flex justify-between items-start'>
                                 <div className='flex flex-col gap-1'>
                                     <div className='text-white'>{new Date(element.time).toLocaleString(undefined, { timeZone: 'Asia/Kolkata' })}</div>
@@ -115,7 +115,7 @@ const Record = () => {
                                     <div className='text-white'><span className='text-white font-medium'>Recharge - </span>{new Intl.NumberFormat().format(element.recharge_value)}</div>
                                 </div>
                                 <div>
-                                    <div className='bg-[#253e90] px-2 py-1 font-semibold rounded-md text-sm text-white'>{nameMapper[String(element.status)]}</div>
+                                    <div className='bg-[#0373bd] px-2 py-1 font-semibold rounded-md text-sm text-white'>{nameMapper[String(element.status)]}</div>
                                 </div>
 
                             </div>
@@ -125,14 +125,14 @@ const Record = () => {
 
                 {(currentRecord === 'withdrawals' || currentRecord === 'all') && withdrawal_list && withdrawal_list.map((element, id) => {
                     return (
-                        <div key={id} className="bg-[#253e90] rounded-lg shadow-md p-2 text-white mt-2 mx-2">
+                        <div key={id} className="bg-[#0373bd] rounded-lg shadow-md p-2 text-white mt-2 mx-2">
                             <div className='flex justify-between items-start'>
                                 <div className='flex flex-col gap-1'>
                                     <div className='text-white'>{new Date(element.time).toLocaleString(undefined, { timeZone: 'Asia/Kolkata' })}</div>
                                     <div className='text-white'><span className='text-white font-medium'>Withdrawal - </span>{new Intl.NumberFormat().format(element.withdrawalAmount)}</div>
                                 </div>
                                 <div>
-                                    <div className='bg-[#253e90] px-2 py-1 font-semibold rounded-md text-sm text-white'>{nameMapper[String(element.status)]}</div>
+                                    <div className='bg-[#0373bd] px-2 py-1 font-semibold rounded-md text-sm text-white'>{nameMapper[String(element.status)]}</div>
                                 </div>
 
                             </div>

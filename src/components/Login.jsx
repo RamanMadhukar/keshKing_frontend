@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 import { RotatingLines } from 'react-loader-spinner';
 import axios from 'axios';
 import BASE_URL from '../api_url';
-import register_logo from '../images/dj/register_logo.jpg';
+import register_logo from '../images/dj/register_logo.png';
 import mobile from '../images/dj/mobile.png';
 import password from '../images/dj/password.png';
 
@@ -77,7 +77,7 @@ const Login = () => {
     }
 
     return (
-        <div className='relative bg-[#253e90] min-h-screen'>
+        <div className='relative bg-[#0373bd] min-h-screen'>
             {toasterShow ? <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
                 <div className='flex gap-2 mx-auto bg-black opacity-70 text-white px-2 py-1 rounded-md'>
                     <div>{toasterText}</div>

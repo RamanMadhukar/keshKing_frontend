@@ -67,13 +67,13 @@ const Bank = () => {
     }
     //[#2e9afe]
     return (
-        <div className='bg-[#253e90] min-h-screen  sm:h-[700px] md:h-[950px] relative'>
+        <div className='bg-[#0373bd] min-h-screen  sm:h-[700px] md:h-[950px] relative'>
             {toasterShow ? <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
                 <div className='flex gap-2 bg-black opacity-80 text-white px-2 py-1 rounded-md'>
                     <div>{toasterText}</div>
                 </div>
             </div> : null}
-            <div className="options text-center  text-recharge-bg flex justify-between  bg-[#253e90] text-md  font-normal mb-2 py-3 items-center px-2">
+            <div className="options text-center  text-recharge-bg flex justify-between  bg-[#0373bd] text-md  font-normal mb-2 py-3 items-center px-2">
                 <div className="flex items-center font-bold">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" onClick={() => navigate(-1)}
