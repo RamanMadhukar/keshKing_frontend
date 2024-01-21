@@ -325,7 +325,7 @@ const Home = () => {
 
 
 
-                    <a href="https://t.me/inoxwindo" className='no-underline text-black'>
+                    <a href="https://t.me/goldwindofficial" className='no-underline text-black'>
                         <div className='cursor-pointer mx-2 flex flex-col justify-center items-center'>
                             <img src={telegram} alt="channel" className='w-10' />
                             <div className='text-[12px] text-white opacity-60 mt-1'>Customer care</div>
