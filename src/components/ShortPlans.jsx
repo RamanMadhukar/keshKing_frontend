@@ -8,7 +8,7 @@ import axios from 'axios';
 import BASE_URL from '../api_url';
 import home from '../images/dj/normal_home.png';
 import company from '../images/dj/company.png';
-import me from '../images/dj/company.png';
+import me from '../images/dj/me.png';
 import project_page_image from '../images/dj/product_page_image.png';
 import p1 from '../images/dj/i1.jpg';
 import p2 from '../images/dj/i2.jpg';
