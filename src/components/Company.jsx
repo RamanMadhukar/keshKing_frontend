@@ -6,9 +6,9 @@ import company_image from '../images/dj/company.jpg';
 const Company = () => {
     const navigate = useNavigate();
     return (
-        <div className=' w-full min-h-screen bg-[#0373bd] text-white '>
+        <div className=' w-full min-h-screen bg-[#34b0a9] text-white '>
             {/* [#2e9afe] */}
-            <div className="options text-center  text-recharge-bg flex justify-between  bg-[#0373bd] text-md  font-normal mb-2 py-3 items-center px-2">
+            <div className="options text-center  text-recharge-bg flex justify-between  bg-[#34b0a9] text-md  font-normal mb-2 py-3 items-center px-2">
                 <div className="flex items-center font-bold">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" onClick={() => navigate('/home')}

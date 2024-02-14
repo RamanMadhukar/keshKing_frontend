@@ -77,7 +77,7 @@ const Login = () => {
     }
 
     return (
-        <div className='relative bg-[#0373bd] min-h-screen'>
+        <div className='relative bg-[#34b0a9] min-h-screen'>
             {toasterShow ? <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
                 <div className='flex gap-2 mx-auto bg-black opacity-70 text-white px-2 py-1 rounded-md'>
                     <div>{toasterText}</div>

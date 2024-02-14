@@ -170,7 +170,7 @@ const ShortPlans = () => {
     }
 
     return (
-        <div className='relative bg-[#0373bd] min-h-screen  text-white'>
+        <div className='relative bg-[#34b0a9] min-h-screen  text-white'>
             {toasterShow ? <div className='w-[50%] absolute z-5 top-[450px] left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
                 <div className='flex gap-2 bg-black opacity-80 text-center justify-center text-white px-2 py-1 rounded-md'>
                     <div>{toasterText}</div>
@@ -204,7 +204,7 @@ const ShortPlans = () => {
                 </ReactModal>
             </div>
 
-            <div className='bg-[#0373bd] py-3 shadow-lg px-3 m-3 mt-0 rounded-md flex justify-center items-center'>
+            <div className='bg-[#34b0a9] py-3 shadow-lg px-3 m-3 mt-0 rounded-md flex justify-center items-center'>
                 <div className='text-white text-sm'>Goldwind-Products</div>
             </div>
 

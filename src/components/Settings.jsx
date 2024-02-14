@@ -32,7 +32,7 @@ const Settings = () => {
 
     //[#2e9afe]
     return (
-        <div className='bg-[#0373bd] h-screen min-h-screen'>
+        <div className='bg-[#34b0a9] h-screen min-h-screen'>
             <div>
                 <ReactModal
                     isOpen={logout_popup}
@@ -63,7 +63,7 @@ const Settings = () => {
                     </div>
                 </ReactModal>
             </div>
-            <div className="options text-center  text-recharge-bg flex justify-between  bg-[#0373bd] text-md  font-normal mb-2 py-3 items-center px-2">
+            <div className="options text-center  text-recharge-bg flex justify-between  bg-[#34b0a9] text-md  font-normal mb-2 py-3 items-center px-2">
                 <div className="flex items-center font-bold">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" onClick={() => navigate('/mine')}

@@ -102,5 +102,5 @@ input:-webkit-autofill:active {
 }
 
 .signup{
-  background: url(./images/login_bg.png) center top / 100% no-repeat rgb(0, 0, 0);
+  background: url(./images/login_bg.png) center top / 100% no-repeat #34b0a9;
 }

@@ -193,7 +193,7 @@ const Withdrawal = () => {
     }
     //[#2e9afe]
     return (
-        <div className='bg-[#0373bd] min-h-screen flex flex-col  sm:h-[1000px] md:h-[950px] relative'>
+        <div className='bg-[#34b0a9] min-h-screen flex flex-col  sm:h-[1000px] md:h-[950px] relative'>
             {toasterShow ? <div className='absolute top-1/2 w-full left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
                 <div className='flex gap-2 bg-black opacity-80 text-white mx-auto w-4/5 px-2 py-1 rounded-md'>
                     <div className='text-center w-full'>{toasterText}</div>
@@ -215,7 +215,7 @@ const Withdrawal = () => {
                 </ReactModal>
             </div>
 
-            <div className="options text-center  text-recharge-bg flex justify-between  bg-[#0373bd] text-md  font-normal mb-2 py-3 items-center px-2">
+            <div className="options text-center  text-recharge-bg flex justify-between  bg-[#34b0a9] text-md  font-normal mb-2 py-3 items-center px-2">
                 <div className="flex items-center font-bold">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" onClick={() => navigate(-1)}
@@ -260,7 +260,7 @@ const Withdrawal = () => {
 
                 <div className='flex items-center justify-start gap-2 mt-4 mb-1'>
                     <div className="balance text-black font-bold text-[16px]">Balance: {Math.floor(balance)}</div>
-                    <div onClick={handleWithdrawalAll} className="withdraw bg-[#0373bd] font-medium rounded-sm
+                    <div onClick={handleWithdrawalAll} className="withdraw bg-[#34b0a9] font-medium rounded-sm
                     text-white text-[10px] py-1 cursor-pointer text-center px-[4px]">All</div>
                 </div>
 

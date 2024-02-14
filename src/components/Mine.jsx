@@ -209,7 +209,7 @@ const Mine = () => {
 
   if (loading) {
     return (
-      <div className='relative bg-[#0373bd] min-h-screen'>
+      <div className='relative bg-[#34b0a9] min-h-screen'>
       {toasterShow
         ?
         <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
@@ -250,7 +250,7 @@ const Mine = () => {
       </div>
 
 
-      <div className="flex flex-col bg-[#0373bd] gap-1 w-full">
+      <div className="flex flex-col bg-[#34b0a9] gap-1 w-full">
         <div className='flex items-center justify-end pr-2 pt-2' onClick={() => navigate('/settings')}>
           <div><img src={setting_top} alt="setting_image" className='w-7 h-7' /></div>
         </div>
@@ -530,7 +530,7 @@ const Mine = () => {
   }
 
   return (
-    <div className='relative h-screen bg-[#0373bd]'>
+    <div className='relative h-screen bg-[#34b0a9]'>
       {toasterShow
         ?
         <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
@@ -571,7 +571,7 @@ const Mine = () => {
       </div>
 
 
-      <div className="flex flex-col bg-[#0373bd] gap-1 w-full">
+      <div className="flex flex-col bg-[#34b0a9] gap-1 w-full">
         <div className='flex items-center justify-end pr-2 pt-2' onClick={() => navigate('/settings', { state: { withdrawalPassword: originalwpwd, loginPassword: originalpwd } })}>
           <div><img src={setting_top} alt="setting_image" className='w-7 h-7' /></div>
         </div>

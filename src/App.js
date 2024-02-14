@@ -40,6 +40,7 @@ import BASE_URL from './api_url';
 import ShorPlans from './components/ShortPlans';
 import Rewards from './components/Rewards';
 import Register2 from './components/Register2';
+import Login2 from './components/Login2';
 
 
 export const AmountContext = createContext();
@@ -71,7 +72,7 @@ function App() {
           <Route path="/" element={<Fallback />} />
           <Route path="/register" element={<Register2 />} />
           <Route path="/register/invite_code/:invite_code" element={<RegisterInvite />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/login" element={<Login2 />} />
           <Route path="/forgot" element={<ForgotPassword />} />
           <Route path="/financial" element={<ShorPlans />} />
           <Route path="/home" element={<Home />} />
