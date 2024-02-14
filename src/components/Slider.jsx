@@ -15,14 +15,14 @@ const Slider = () => {
         <div>
           <img src={s1} className="h-[190px] rounded-md" alt="img_2" />
         </div>
-
+{/* 
         <div>
           <img src={s2} className="h-[190px] rounded-md" alt="img_1" />
         </div>
 
         <div>
           <img src={s3} className="h-[190px] rounded-md" alt="img_1" />
-        </div>
+        </div> */}
 
         {/* <div>
           <img src={s4} className="h-[190px] rounded-md" alt="img_1" />

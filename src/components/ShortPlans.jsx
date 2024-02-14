@@ -170,7 +170,7 @@ const ShortPlans = () => {
     }
 
     return (
-        <div className='relative bg-[#34b0a9] min-h-screen  text-white'>
+        <div className='relative bg-[#34b0a9] min-h-screen  text-white signup'>
             {toasterShow ? <div className='w-[50%] absolute z-5 top-[450px] left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
                 <div className='flex gap-2 bg-black opacity-80 text-center justify-center text-white px-2 py-1 rounded-md'>
                     <div>{toasterText}</div>
@@ -233,7 +233,7 @@ const ShortPlans = () => {
                     {currentVisible === 'big' || true && (
                         <div className='grid grid-cols- '>
                             {userDetails && amountDetails?.plan_state && (
-                                <div className='grid grid-cols-2 gap-1'>
+                                <div className='grid grid-cols-1 gap-1'>
 
                                     {userDetails && (amountDetails.plan_state[0] === 0) ? (
                                         <span className='pointer-events-none'>
@@ -311,7 +311,7 @@ const ShortPlans = () => {
 
 
                 {currentVisible === 'short' && amountDetails?.plan_state && userDetails && (
-                    <div className={`grid grid-cols-2 gap-1`}>
+                    <div className={`grid grid-cols-1 gap-1`}>
                         {(amountDetails.plan_state[5] === 0) ?
                             (
                                 <span className='pointer-events-none'>
