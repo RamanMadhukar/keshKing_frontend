@@ -48,6 +48,7 @@ const Withdrawal = () => {
     const [toasterShow, setToasterShow] = useState(false);
     const [toasterText, setToasterText] = useState('');
     const [modalIsOpen, setIsOpen] = useState(false);
+    const [userDetails, setUserDetails] = React.useState(null);
 
     const toaster = (text, arg = '') => {
         setToasterText(text);
@@ -68,6 +69,8 @@ const Withdrawal = () => {
         const getDetails = async () => {
             const docRef = await axios.post(`${BASE_URL}/get_user`, { user_id: localStorage.getItem('uid') }).then(({ data }) => data);
             if (docRef) {
+                setUserDetails(docRef)
+
                 if (docRef.bank_details.bankAccount.length === 0) {
                     toaster('Unbound bank card, go to bind!', '/bank');
                 } else {
@@ -116,6 +119,12 @@ const Withdrawal = () => {
             toaster('You dont have enough balance');
             return;
         }
+
+        if (userDetails?.plans_purchased?.length === 0) {
+            toaster('At least buy one plan to withdraw');
+            return;
+        }
+
         //&& otp === otpfield
         if (wpassword === loc.state.withdrawalPassword) {
             try {
@@ -319,7 +328,7 @@ const Withdrawal = () => {
                          block w-[95%] py-2 shadow-slate-400'>Submit</button>
                 }
             </div>
-        
+
             <div className="part1 bg-[#19244b]  rounded-lg mx-3 flex flex-col gap-1 text-[14px]">
                 <div className='text-gray-500 font-medium'><br />
                     1: Valid members can apply for withdrawal. The number of withdrawals is unlimited. The minimum withdrawal amount is 300rs.<br />
