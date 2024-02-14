@@ -100,3 +100,7 @@ input:-webkit-autofill:active {
   background-size: 100vw 100vh;
 
 }
+
+.signup{
+  background: url(./images/login_bg.png) center top / 100% no-repeat rgb(0, 0, 0);
+}

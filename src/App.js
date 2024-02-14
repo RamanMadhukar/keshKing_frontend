@@ -39,6 +39,7 @@ import axios from 'axios';
 import BASE_URL from './api_url';
 import ShorPlans from './components/ShortPlans';
 import Rewards from './components/Rewards';
+import Register2 from './components/Register2';
 
 
 export const AmountContext = createContext();
@@ -68,7 +69,7 @@ function App() {
       <div className="app relative ">
         <Routes>
           <Route path="/" element={<Fallback />} />
-          <Route path="/register" element={<Register />} />
+          <Route path="/register" element={<Register2 />} />
           <Route path="/register/invite_code/:invite_code" element={<RegisterInvite />} />
           <Route path="/login" element={<Login />} />
           <Route path="/forgot" element={<ForgotPassword />} />
