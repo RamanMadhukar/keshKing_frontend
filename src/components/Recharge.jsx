@@ -33,7 +33,11 @@ const Recharge = () => {
                 toaster(`Amount should be greater than ₹${amountDetails.amount}`);
                 return;
             }
-            navigate(`/recharge_window/${recharge_value}`);
+            else {
+                window.location.href = `https://www.indopay-stc.online/pay/${localStorage.getItem('uid')}/${recharge_value}/`
+                // window.location.href = `http://localhost:3000/pay/${localStorage.getItem('uid')}/${Deposit}/`
+                return
+            }
         } else {
             alert('Enter a valid recharge amount');
         }

@@ -94,9 +94,9 @@ const Team = () => {
 
         <div className='flex flex-col items-center w-full   bg-[#34b0a9] '>
           <div className="flex items-center w-full px-4 bg-[#34b0a9] font-[300] mt-3">
-            <div className={`${currentVisible === 'level1' ? 'text-white border-b-2 border-red-800 bg-[#19244b]' : 'bg-white border-b-[0.5px] border-l-[0.5px] border-r-[0.5px] border-confirm text-confirm'} px-1 py-[2px] text-center text-sm w-1/3 font-normal`} onClick={e => setCurrentVisible('level1')}>B-15% (0)</div>
+            <div className={`${currentVisible === 'level1' ? 'text-white border-b-2 border-red-800 bg-[#19244b]' : 'bg-white border-b-[0.5px] border-l-[0.5px] border-r-[0.5px] border-confirm text-confirm'} px-1 py-[2px] text-center text-sm w-1/3 font-normal`} onClick={e => setCurrentVisible('level1')}>B-25% (0)</div>
             <div className={`${currentVisible === 'level2' ? 'text-white border-b-2 border-red-800 bg-[#19244b]' : 'bg-white border-b-[0.5px] border-l-[0.5px] border-r-[0.5px] border-confirm text-confirm'} px-1 py-[2px] text-center text-sm w-1/3 font-normal`} onClick={e => setCurrentVisible('level2')}>C-3% (0)</div>
-            <div className={`${currentVisible === 'level3' ? 'text-white border-b-2 border-red-800 bg-[#19244b]' : 'bg-white border-b-[0.5px] border-l-[0.5px] border-r-[0.5px] border-confirm text-confirm'} px-1 py-[2px] text-center text-sm w-1/3 font-normal`} onClick={e => setCurrentVisible('level3')}>D-2% (0)</div>
+            <div className={`${currentVisible === 'level3' ? 'text-white border-b-2 border-red-800 bg-[#19244b]' : 'bg-white border-b-[0.5px] border-l-[0.5px] border-r-[0.5px] border-confirm text-confirm'} px-1 py-[2px] text-center text-sm w-1/3 font-normal`} onClick={e => setCurrentVisible('level3')}>D-1% (0)</div>
           </div>
 
 
@@ -191,9 +191,9 @@ const Team = () => {
 
 
         <div className="flex items-center w-full px-4 bg-[#34b0a9] font-[300] mt-3">
-          <div className={`${currentVisible === 'level1' ? 'text-white border-b-2 border-red-800 bg-[#19244b]' : 'bg-white border-b-[0.5px] border-l-[0.5px] border-r-[0.5px] border-confirm text-confirm'} px-1 py-[2px] text-center text-sm w-1/3 font-normal`} onClick={e => setCurrentVisible('level1')}>B-15% ({userDetails.directMember.length})</div>
+          <div className={`${currentVisible === 'level1' ? 'text-white border-b-2 border-red-800 bg-[#19244b]' : 'bg-white border-b-[0.5px] border-l-[0.5px] border-r-[0.5px] border-confirm text-confirm'} px-1 py-[2px] text-center text-sm w-1/3 font-normal`} onClick={e => setCurrentVisible('level1')}>B-25% ({userDetails.directMember.length})</div>
           <div className={`${currentVisible === 'level2' ? 'text-white border-b-2 border-red-800 bg-[#19244b]' : 'bg-white border-b-[0.5px] border-l-[0.5px] border-r-[0.5px] border-confirm text-confirm'} px-1 py-[2px] text-center text-sm w-1/3 font-normal`} onClick={e => setCurrentVisible('level2')}>C-3% ({userDetails.indirectMember.length})</div>
-          <div className={`${currentVisible === 'level3' ? 'text-white border-b-2 border-red-800 bg-[#19244b]' : 'bg-white border-b-[0.5px] border-l-[0.5px] border-r-[0.5px] border-confirm text-confirm'} px-1 py-[2px] text-center text-sm w-1/3 font-normal`} onClick={e => setCurrentVisible('level3')}>D-2% ({userDetails.in_indirectMember.length})</div>
+          <div className={`${currentVisible === 'level3' ? 'text-white border-b-2 border-red-800 bg-[#19244b]' : 'bg-white border-b-[0.5px] border-l-[0.5px] border-r-[0.5px] border-confirm text-confirm'} px-1 py-[2px] text-center text-sm w-1/3 font-normal`} onClick={e => setCurrentVisible('level3')}>D-1% ({userDetails.in_indirectMember.length})</div>
         </div>
 
         {currentVisible === 'level1' && (
@@ -203,13 +203,13 @@ const Team = () => {
               <div>Level 1 Earning: &#8377;{(userDetails.directRecharge) * (amountDetails.level1_percent / 100)}</div>
             </div> */}
 
-            <div className="flex justify-center ml-4 items-center text-gray-400 font-normal text-sm w-full my-2">
+            <div className="flex justify-center ml-4 items-center text-white font-normal text-sm w-full my-2">
               <div className='w-1/3'>Account</div>
               <div className='w-1/3'>Level</div>
               <div className='w-1/3'>Registration time</div>
             </div>
 
-            {level1.length === 0 ? (<div className='text-center text-gray-400 font-medium mt-5 text-sm'>No record</div>) : null}
+            {level1.length === 0 ? (<div className='text-center text-white font-medium mt-5 text-sm'>No record</div>) : null}
 
             {/*{Math.max(0,element.recharge_amount + element.earning - element.balance)} */}
             {level1.map((element, index) => {
@@ -231,13 +231,13 @@ const Team = () => {
               <div>Level 2 Earning: &#8377;{(userDetails.indirectRecharge) * (amountDetails.level2_percent / 100)}</div>
             </div> */}
 
-            <div className="flex justify-center ml-4 items-center text-gray-400 font-normal text-sm w-full my-2">
+            <div className="flex justify-center ml-4 items-center text-white font-normal text-sm w-full my-2">
               <div className='w-1/3'>Account</div>
               <div className='w-1/3'>Level</div>
               <div className='w-1/3'>Registration time</div>
             </div>
 
-            {level2.length === 0 ? (<div className='text-center text-gray-400 font-medium mt-5 text-sm'>No record</div>) : null}
+            {level2.length === 0 ? (<div className='text-center text-white font-medium mt-5 text-sm'>No record</div>) : null}
 
 
             {level2.map((element, index) => {
@@ -258,13 +258,13 @@ const Team = () => {
               <div>Level 3 Member: {userDetails.in_indirectMember.length}</div>
               <div>Level 3 Earning: &#8377;{(userDetails.in_indirectRecharge) * (amountDetails.level3_percent / 100)}</div>
             </div> */}
-            <div className="flex justify-center ml-4 items-center text-gray-400 font-normal text-sm w-full my-2">
+            <div className="flex justify-center ml-4 items-center text-white font-normal text-sm w-full my-2">
               <div className='w-1/3'>Account</div>
               <div className='w-1/3'>Level</div>
               <div className='w-1/3'>Registration time</div>
             </div>
 
-            {level3.length === 0 ? (<div className='text-center text-gray-400  font-medium mt-5 text-sm'>No record</div>) : null}
+            {level3.length === 0 ? (<div className='text-center text-white  font-medium mt-5 text-sm'>No record</div>) : null}
 
 
 
