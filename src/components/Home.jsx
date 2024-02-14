@@ -1,6 +1,6 @@
 import React, { useEffect, useLayoutEffect, useState } from 'react';
 import Slider from './Slider';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import ReactModal from 'react-modal';
 import { useContext } from 'react';
 import { AmountContext } from '../App.js';
@@ -15,6 +15,8 @@ import company from '../images/dj/company.png';
 import me from '../images/dj/me.png';
 import project from '../images/dj/Project.png';
 import myteams_home from '../images/dj/myteams.png';
+import logo from '../images/logo.svg'
+import ShortPlans from './ShortPlans.jsx';
 
 
 const customStyles = {
@@ -221,6 +223,17 @@ const Home = () => {
                 </ReactModal>
             </div>
 
+            <div className="flex py-3 mb-5 signup text-white px-5 justify-between">
+
+                <img src={logo} alt="" />
+
+                <p>
+                    Welcome to <br />
+                    <span className='font-bold'>Unocoin</span>
+                </p>
+
+            </div>
+
 
 
             <Slider />
@@ -303,64 +316,7 @@ const Home = () => {
             </div> */}
 
             {/*Navigation bar */}
-            <div className="bg-[#34b0a9] flex-col  text-black font-semibold relative flex overflow-x-hidden  mx-1 py-2  sm:w-3/5 lg:w-3/5 overflow-y-hidden">
-                <div className="flex flex-row justify-around text-xs items-center w-full py-2 px-3">
-                    <div className='cursor-pointer mx-2 flex flex-col justify-center items-center'>
-                        <img src={recharge} alt="recharge" className='w-10' onClick={() => navigate('/recharge')} />
-                        <div className='text-[12px] text-white opacity-60 mt-1'>Recharge</div>
-                    </div>
 
-                    <div className='cursor-pointer mx-2 flex flex-col justify-center items-center'>
-                        <img src={withdraw} alt="invite" className='w-10' onClick={() => isBetween() || true ?
-                            navigate('/withdrawal', { state: { withdrawalPassword: originalwpwd, loginPassword: originalpwd } }) : toaster('You can withdraw only between 08:00 AM to 05:00 PM')
-                        } />
-                        <div className='text-[12px] text-white opacity-60 mt-1 '>withdraw</div>
-                    </div>
-
-
-                    <div onClick={() => navigate('/team')} className='cursor-pointer mx-2 flex flex-col justify-center items-center'>
-                        <img src={myteams_home} alt="channel" className='w-10' />
-                        <div className='text-[12px] text-white opacity-60 mt-1'>My teams</div>
-                    </div>
-
-
-
-                    <a href="https://t.me/goldwindofficial" className='no-underline text-black'>
-                        <div className='cursor-pointer mx-2 flex flex-col justify-center items-center'>
-                            <img src={telegram} alt="channel" className='w-10' />
-                            <div className='text-[12px] text-white opacity-60 mt-1'>Customer care</div>
-                        </div>
-                    </a>
-
-                    {/* <div onClick={() => navigate('/rewards')} className='cursor-pointer mx-2 flex flex-col justify-center items-center'>
-                        <img src={bonus} alt="online" className='w-10' />
-                        <div className='text-[12px] text-white opacity-60 mt-1 '>bonus</div>
-                    </div> */}
-                </div>
-
-
-                <div className="bg-white rounded-md flex flex-col gap-3 p-3 mt-3">
-                    <div className='flex flex-row justify-between items-center '>
-                        <div className="opacity-70 text-center bg-[#f2f2f2] w-[30%] flex flex-col items-center justify-center">
-                            <div>B-15%</div>
-                            <div>{userDetails?.directMember.length}</div>
-                        </div>
-                        <div className="opacity-70 text-center bg-[#f2f2f2] w-[30%] flex flex-col items-center justify-center">
-                            <div>C-3%</div>
-                            <div>{userDetails?.indirectMember.length}</div>
-                        </div>
-                        <div className="opacity-70 text-center bg-[#f2f2f2] w-[30%] flex flex-col items-center justify-center">
-                            <div>D-2%</div>
-                            <div>{userDetails?.in_indirectMember.length}</div>
-                        </div>
-                    </div>
-                    <button
-                        onClick={() => navigate('/team')}
-                        className='w-full text-lg rounded-md bg-[#19244b] text-white font-semibold text-center py-4'>
-                        View team commissions
-                    </button>
-                </div>
-            </div>
 
             {/* <div className='bg-[rgb(29,70,30)] text-md text-white flex mt-2 items-center  mb-2 sm:w-3/5 lg:w-3/5 mx-5'>
                 <div className={`w-1/2 text-center  py-5 ${currentVisible === 'big' ? ' text-white font-medium bg-red-700' : ' bg-nselected text-black'}`} onClick={() => setCurrentVisible('big')}>Daily Income</div>
@@ -483,14 +439,53 @@ const Home = () => {
                     </div>)}
             </div> */}
 
-            <div className='flex mt-2 items-center  mb-2 sm:w-4/5 lg:w-4/5 mx-1'>
+            {/* <div className='flex mt-2 items-center  mb-2 sm:w-4/5 lg:w-4/5 mx-1'>
                 <video controls src={"https://youtu.be/j2IReRTRDrk"} className='w-full' disablePictureInPicture={""} controlsList={"nodownload noplaybackrate "}></video>
-            </div>
+            </div> */}
 
             {/* <div className="flex justify-between items-center mt-2 sm:w-4/5 lg:w-4/5 mx-1">
                 <div className='text-2xl text-black font-semibold'>News</div>
                 <div className='text-sm opacity-70'>more &gt;</div>
             </div> */}
+
+
+            <div className="bg-[#343436] rounded-lg px-8 py-3 text-white flex">
+
+                <div className="w-1/2">
+                    <span>₹</span><br />
+                    <span className='text-5xl'>{userDetails?.balance}</span><br />
+                    <span>Total Asset</span>
+                </div>
+
+                <div className="w-1/2">
+                    <span>₹</span><br />
+                    <span className='text-5xl'>{userDetails?.recharge_amount}</span> <br />
+                    <span>Income</span>
+                </div>
+
+
+            </div>
+
+
+            <div className=" text-white mt-10 grid grid-cols-2 gap-1">
+
+                <Link to={'/recharge'} className="bg-[#343436] rounded-lg px-5 py-5">
+                    <img src={recharge} alt="" /><br />
+                    <span className='text-2xl'>Deposit</span> <br />
+                    {/* <span>Total Asset</span> */}
+                </Link>
+
+                <div onClick={() => isBetween() || true ?
+                            navigate('/withdrawal', { state: { withdrawalPassword: originalwpwd, loginPassword: originalpwd } }) : toaster('You can withdraw only between 08:00 AM to 05:00 PM')
+                        } className="bg-[#343436] rounded-lg px-5 py-5">
+                    <img src={withdraw} alt="" /><br />
+                    <span className='text-2xl'>Withdraw</span> <br />
+                    {/* <span>Total Asset</span> */}
+                </div>
+
+            </div>
+
+            <ShortPlans />
 
 
 
@@ -504,8 +499,8 @@ const Home = () => {
                         </div>
 
                         <div className='cursor-pointer mx-2 flex flex-col justify-center items-center'>
-                            <img src={project} alt="recharge" className='w-6' />
-                            <div>Products</div>
+                            <img src={myteams_home} alt="recharge" className='w-6' />
+                            <div>Team</div>
                         </div>
                         <div className='cursor-pointer mx-2 flex flex-col justify-center items-center '>
                             <img src={company} alt="app_dwd" className='w-6' />
@@ -528,9 +523,9 @@ const Home = () => {
                         </div>
 
                         <div className='cursor-pointer mx-2 flex flex-col justify-center items-center'
-                            onClick={() => navigate('/financial')}>
-                            <img src={project} alt="recharge" className='w-6' />
-                            <div>Products</div>
+                            onClick={() => navigate('/team')}>
+                            <img src={myteams_home} alt="recharge" className='w-6' />
+                            <div>Team</div>
                         </div>
                         <div className='cursor-pointer mx-2 flex flex-col justify-center items-center '
                             onClick={() => navigate('/company')}>

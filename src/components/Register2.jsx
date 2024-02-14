@@ -161,7 +161,7 @@ const Register2 = () => {
 
 
 
-            <div className="px-14 py-10 text-white h-screen signup">
+            <div className="px-3 py-10 text-white h-screen signup">
 
                 <img src={logo} alt="" className='mx-auto mb-5' />
 

@@ -18,6 +18,8 @@ import company from '../images/dj/company.png';
 import me from '../images/dj/me_page_image.png';
 import project from '../images/dj/Project.png';
 import register_logo from '../images/dj/register_logo.png';
+import myteams_home from '../images/dj/myteams.png';
+
 
 const customStyles2 = {
   content: {
@@ -825,9 +827,9 @@ const Mine = () => {
           </div>
 
           <div className='cursor-pointer mx-2 flex flex-col justify-center items-center'
-            onClick={() => navigate('/financial')}>
-            <img src={project} alt="recharge" className='w-6' />
-            <div>Products</div>
+            onClick={() => navigate('/team')}>
+            <img src={myteams_home} alt="recharge" className='w-6' />
+            <div>Team</div>
           </div>
           <div className='cursor-pointer mx-2 flex flex-col justify-center items-center '
             onClick={() => navigate('/company')}>
