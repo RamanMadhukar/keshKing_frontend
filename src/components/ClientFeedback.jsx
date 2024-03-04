@@ -44,13 +44,13 @@ const ClientFeedback = () => {
     }
     //[#2e9afe]
     return (
-        <div className='min-h-screen bg-[#0373bd] h-screen flex flex-col text-white font-light relative'>
+        <div className='min-h-screen bg-[#01455c] h-screen flex flex-col text-white font-light relative'>
             {toasterShow ? <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
                 <div className='flex gap-2 bg-black opacity-100 text-white px-2 py-1 rounded-md'>
                     <div>{toasterText}</div>
                 </div>
             </div> : null}
-            <div className="top p-3 cursor-pointer flex items-center bg-[#0373bd]">
+            <div className="top p-3 cursor-pointer flex items-center bg-[#01455c]">
                 <svg xmlns="http://www.w3.org/2000/svg" onClick={() => navigate(-1)} fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4  storke-white  cursor-pointer">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
                 </svg>

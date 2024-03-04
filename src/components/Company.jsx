@@ -6,9 +6,9 @@ import company_image from '../images/dj/company.jpg';
 const Company = () => {
     const navigate = useNavigate();
     return (
-        <div className=' w-full min-h-screen bg-[#0373bd] text-white '>
+        <div className=' w-full min-h-screen bg-[#01455c] text-white '>
             {/* [#2e9afe] */}
-            <div className="options text-center  text-recharge-bg flex justify-between  bg-[#0373bd] text-md  font-normal mb-2 py-3 items-center px-2">
+            <div className="options text-center  text-recharge-bg flex justify-between  bg-[#01455c] text-md  font-normal mb-2 py-3 items-center px-2">
                 <div className="flex items-center font-bold">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" onClick={() => navigate('/home')}
@@ -45,13 +45,8 @@ const Company = () => {
                 <div className="flex flex-col gap-2 px-2  py-2 mt-1 rounded-md w-full mx-auto">
                     {/* <div className='font-semibold'>CEAT</div> */}
                     <div className='text-[16px] font-semibold'>
-                        Goldwind <br /><br />
-                        Goldwind is a trusted global strategic partner in clean energy. As a company, we are committed to promoting energy transformation to ensure access to affordable, reliable, and sustainable energy for all – further Driving a Renewable Future. Specializing in energy development, energy devices, energy services, and energy use, Goldwind leverages its global network of scientific research innovation and best business practices to take renewable energy utilization and efficiency to new heights. As an SZSE and HKEX listed company, Goldwind has repeatedly been recognized as: “Corporate Climate Leader”, “Mos Respected Company in Asia”, and “Best Investor Relations Company”, and awarded “Top 50 Most Innovative Companies in the World”, “Carbon Clean200”, “Top 500 Global New Energy Companies”, “New Fortune Best Listed Companies”, “Fortune Top 500 Chinese Companies, and other accolades.
-                        <br /><br />
-
-                        Since we started our business, we have witnessed and experienced the growth and prosperity of China’s renewable energy industry and established our presence in the global market with comprehensive and in-depth internationalization capabilities. Goldwind’s business network covers 38 countries across six continents, with eight R&D centers worldwide that constitute the key drivers of our success and leading position in cutting-edge technology and development. We have about 10,000 employees worldwide, including over 3,000 research and development (R&D) and technical personnel. With eight overseas regional centers in North America, South America, Europe, Africa, Australia, Asia, Middle East and North Africa, and the Russian-speaking part of Central Asia, we have fully realized the internationalization of capital, market, technology, talents and management.
-                        <br /><br />
-                        So far, we have delivered over 49,000 wind turbines all over the world with a global cumulative installed capacity exceeding 111GW and an operations and maintenance (O&M) service capacity exceeding 64GW. To promote global energy transformation, Goldwind has thoroughly integrated renewable energy and digital technology. We are actively building zero-carbon solutions for new power system, and optimizing and reconstructing source-grid-storage-load to create an innovative energy asset management model, so we can fully contribute to "carbon neutrality” through a smarter Internet of Energy. In the field of water treatment and environmental protection, Goldwind focuses on the investment and development, construction and operation, and technological innovation of water assets. Our scope of business covers municipal water supply, municipal/industrial sewage treatment, reclaimed water reuse, etc. In addition, we play a role in solid waste disposal and sludge treatment among other fields. As of the end of 2022, our subsidiary Goldwind EP has invested and run 65 water projects in total, with a water treatment capacity exceeding 2.83 million tons per day.
+                        Our Journey <br/>
+                        Since 1936, Caltex has been on a journey with only one destination – the satisfaction of our customers. The Caltex Star, our symbol of quality, value and service, is also a constant reminder of our commitment to you. To renew your drive. To do the best we can to help you meet the needs of your journey. To recharge and refuel, not just your vehicle but your being. In addition to our accessible locations, modern facilities, high-quality products, and fast and friendly service, we’re always on the lookout for new partnerships that can deliver an even greater range of conveniences for you. Because at Caltex, our journey has only one destination. You.
                     </div>
 
                 </div>

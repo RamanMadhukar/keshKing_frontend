@@ -190,7 +190,7 @@ const Home = () => {
 
 
     return (
-        <div className='relative bg-[#0373bd] min-h-screen px-1'>
+        <div className='relative bg-[#01455c] min-h-screen px-1'>
             {toasterShow ? <div className='w-[90%] absolute z-50 top-[500px] left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
                 <div className='flex gap-2 bg-black opacity-80 text-white px-2 py-1 rounded-md'>
                     <div>{toasterText}</div>
@@ -260,7 +260,7 @@ const Home = () => {
                     ariaHideApp={false}>
                     <div className='w-full rounded-lg shadow-xl z-10 border border-gray-200'>
                         <div className='flex  flex-col bg-white w-full text-white rounded-md'>
-                            <div className='text-white text-xl text-center bg-[#0373bd] py-2'>Welcome to Boat</div>
+                            <div className='text-white text-xl text-center bg-[#01455c] py-2'>Welcome to Boat</div>
                             <div className='flex flex-col p-2 text-lg gap-2 font-normal bg-white text-red-800 text-semibold pt-4 mb-[180px]'>
                                 Sign Up to get 50rs <br />
                                 Commission bonus up to 30% <br />
@@ -303,7 +303,7 @@ const Home = () => {
             </div> */}
 
             {/*Navigation bar */}
-            <div className="bg-[#0373bd] flex-col  text-black font-semibold relative flex overflow-x-hidden  mx-1 py-2  sm:w-3/5 lg:w-3/5 overflow-y-hidden">
+            <div className="bg-[#01455c] flex-col  text-black font-semibold relative flex overflow-x-hidden  mx-1 py-2  sm:w-3/5 lg:w-3/5 overflow-y-hidden">
                 <div className="flex flex-row justify-around text-xs items-center w-full py-2 px-3">
                     <div className='cursor-pointer mx-2 flex flex-col justify-center items-center'>
                         <img src={recharge} alt="recharge" className='w-10' onClick={() => navigate('/recharge')} />
@@ -325,7 +325,7 @@ const Home = () => {
 
 
 
-                    <a href="https://t.me/goldwindofficial" className='no-underline text-black'>
+                    <a href="https://t.me/Caltexofficial" className='no-underline text-black'>
                         <div className='cursor-pointer mx-2 flex flex-col justify-center items-center'>
                             <img src={telegram} alt="channel" className='w-10' />
                             <div className='text-[12px] text-white opacity-60 mt-1'>Customer care</div>
